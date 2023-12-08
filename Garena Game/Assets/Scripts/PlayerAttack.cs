@@ -5,38 +5,36 @@ using UnityEngine;
 public class PlayerAttack : MonoBehaviour
 {
     // [SerializeField] private LayerMask groundMask;
+    [SerializeField] float timer;
+    [SerializeField] float timeBetweenFiring;
+    public GameObject playerProjectile;
 
     private Camera mainCamera;
+    private Vector3 mousePos;
+    private bool canFire;
 
     private void Start()
     {
         mainCamera = Camera.main;
     }
 
-    private void Aim()
+    private void Update()
     {
-        var (success, position) = GetMousePosition();
-        if (success)
-        {
-            var direction = position - transform.position;
+        mousePos = mainCamera.ScreenToWorldPoint(Input.mousePosition);
 
-            direction.y = 0;
-            
-            transform.forward = direction;
+        if (!canFire)
+        {
+            timer += Time.deltaTime;
+            if (timer > timeBetweenFiring)
+            {
+                canFire = true;
+                timer = 0;
+            }
         }
-    }
 
-    private (bool success, Vector3 position) GetMousePosition()
-    {
-        var ray = mainCamera.ScreenPointToRay(Input.mousePosition);
-
-        if (Physics.Raycast(ray, out var hitInfo, Mathf.Infinity))
+        if (Input.GetMouseButtonDown(0) && canFire)
         {
-            return (success: true, position: hitInfo.point);
-        }
-        else
-        {
-            return (success: false, position: Vector3.zero);
+            Instantiate(playerProjectile, transform.position, Quaternion.identity);
         }
     }
 }
