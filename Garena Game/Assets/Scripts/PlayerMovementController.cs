@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class PlayerMovementController : MonoBehaviour
 {
     [SerializeField] float movementSpeed = 1f;
     CharacterRenderer charaRenderer;

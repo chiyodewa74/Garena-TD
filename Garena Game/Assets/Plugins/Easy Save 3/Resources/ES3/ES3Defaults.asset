@@ -33,10 +33,7 @@ MonoBehaviour:
     - Assembly-CSharp
     - PsdPlugin
     - PPv2URPConverters
-    - Sirenix.OdinInspector.CompatibilityLayer.Editor
     - AllIn1SpriteShaderAssembly
-    - Sirenix.OdinInspector.CompatibilityLayer
-    - Sirenix.OdinInspector.Modules.UnityMathematics
     showAdvancedSettings: 0
   addMgrToSceneAutomatically: 0
   autoUpdateReferences: 1
