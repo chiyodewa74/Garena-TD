@@ -5,12 +5,14 @@ using UnityEngine;
 public class NewBehaviourScript : MonoBehaviour
 {
     [SerializeField] float movementSpeed = 1f;
+    CharacterRenderer charaRenderer;
 
     Rigidbody2D rb;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        charaRenderer = GetComponent<CharacterRenderer>();
     }
 
     private void FixedUpdate()
@@ -22,6 +24,7 @@ public class NewBehaviourScript : MonoBehaviour
         inputVector = Vector2.ClampMagnitude(inputVector, 1);
         Vector2 movement = inputVector * movementSpeed;
         Vector2 newPos = currentPos + movement * Time.deltaTime;
+        charaRenderer.SetDirection(movement);
         rb.MovePosition(newPos);
     }
 }

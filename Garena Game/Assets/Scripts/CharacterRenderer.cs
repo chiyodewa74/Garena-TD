@@ -9,6 +9,7 @@ public class CharacterRenderer : MonoBehaviour
     {
         "Static N", "Static NW", "Static W", "Static SW", "Static S", "Static SE", "Static E", "Static NE"
     };
+
     [SerializeField]
     static readonly string[] runDirections =
     {
@@ -37,7 +38,8 @@ public class CharacterRenderer : MonoBehaviour
             lastDirection = DirectionToIndex(direction, 8);
         }
 
-        animator.Play(lastDirection);
+        Debug.Log(lastDirection);
+        animator.Play(directionArray[lastDirection]);
     }
 
     public static int DirectionToIndex(Vector2 dir, int sliceCount)
