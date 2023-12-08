@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] EnemySpawner enemySpawner;
+    [SerializeField] GameObject losePanel;
+    [SerializeField] GameObject winPanel;
 
     public int Health;
     public bool loseGame;
@@ -20,7 +22,7 @@ public class GameManager : MonoBehaviour
         if (Health <= 0)
         {
             Time.timeScale = 0;
-            Debug.Log("Lose!");
+            losePanel.SetActive(true);
             if (Input.GetKeyDown(KeyCode.R))
             {
                 Time.timeScale = 1;
@@ -30,6 +32,7 @@ public class GameManager : MonoBehaviour
 
         if (enemySpawner.CurrentWave > enemySpawner.waves.Count)
         {
+            winPanel.SetActive(true);
             Debug.Log("Win!");
         }
     }
