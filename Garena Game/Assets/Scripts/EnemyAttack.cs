@@ -10,6 +10,11 @@ public class EnemyAttack : MonoBehaviour
     public GameObject Projectile;
     float SelectedShootTime;
 
+    private void Start()
+    {
+        SelectedShootTime = Time.time + Random.Range(MinShootTime, MaxShootTime);
+    }
+
     // Update is called once per frame
     void Update()
     {
