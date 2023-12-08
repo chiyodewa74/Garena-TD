@@ -20,4 +20,13 @@ public class EnemyMovement : MonoBehaviour
     {
         rb.position = Vector2.MoveTowards(transform.position, MoneyPile.transform.position, Speed * Time.fixedDeltaTime);
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Objective"))
+        {
+            print("Objective Hit!");
+            Destroy(gameObject);
+        }
+    }
 }
