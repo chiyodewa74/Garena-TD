@@ -183,6 +183,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8821ce6304802043b56a9e810effc1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gm: {fileID: 985170636}
   SpawnPoints:
   - {fileID: 781029340}
   - {fileID: 1455285216}
@@ -200,21 +201,15 @@ MonoBehaviour:
   - {fileID: 1843377931}
   - {fileID: 1941795059}
   waves:
-  - WaveTime: 60
-    MinSpawnTime: 7
-    MaxSpawnTime: 10
+  - WaveTime: 10
+    MinSpawnTime: 1
+    MaxSpawnTime: 3
     Enemies:
     - {fileID: 5987250172308849461, guid: b4d783851ba477a4aac9f7f58c431d01, type: 3}
     - {fileID: 5987250172308849461, guid: b15692debd66b124cb7d5067b8f17f39, type: 3}
-  - WaveTime: 150
-    MinSpawnTime: 5
-    MaxSpawnTime: 8
-    Enemies:
-    - {fileID: 5987250172308849461, guid: b4d783851ba477a4aac9f7f58c431d01, type: 3}
-    - {fileID: 5987250172308849461, guid: b15692debd66b124cb7d5067b8f17f39, type: 3}
-  - WaveTime: 250
-    MinSpawnTime: 3
-    MaxSpawnTime: 5
+  - WaveTime: 10
+    MinSpawnTime: 1
+    MaxSpawnTime: 3
     Enemies:
     - {fileID: 5987250172308849461, guid: b4d783851ba477a4aac9f7f58c431d01, type: 3}
     - {fileID: 5987250172308849461, guid: b15692debd66b124cb7d5067b8f17f39, type: 3}
@@ -3770,6 +3765,53 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &985170635
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 985170637}
+  - component: {fileID: 985170636}
+  m_Layer: 0
+  m_Name: Game Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &985170636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 985170635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d020e41a1cb562489283b4f7b38c195, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemySpawner: {fileID: 99707833}
+  Health: 2
+  loseGame: 0
+--- !u!4 &985170637
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 985170635}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.090913296, y: 2.0737908, z: 0.067238614}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1185911238
 GameObject:
   m_ObjectHideFlags: 0
@@ -5147,9 +5189,10 @@ GameObject:
   - component: {fileID: 1519386935}
   - component: {fileID: 1519386936}
   - component: {fileID: 1519386937}
+  - component: {fileID: 1519386938}
   m_Layer: 0
   m_Name: Money Pile
-  m_TagString: Untagged
+  m_TagString: Objective
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5250,7 +5293,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -5266,6 +5309,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 20, y: 17.14}
   m_EdgeRadius: 0
+--- !u!114 &1519386938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1519386934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bcd9dc306bccc2409740e44f78cfe2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gm: {fileID: 985170636}
 --- !u!1 &1538226455
 GameObject:
   m_ObjectHideFlags: 0
@@ -35899,3 +35955,4 @@ SceneRoots:
   - {fileID: 1216614234}
   - {fileID: 1519386935}
   - {fileID: 99707834}
+  - {fileID: 985170637}
