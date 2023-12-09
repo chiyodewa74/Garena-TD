@@ -6,16 +6,16 @@ public class EnemyAttack : MonoBehaviour
 {
     [SerializeField] EnemyType enemyType;
     [SerializeField] float attackRange;
+    [SerializeField] LayerMask PlayerMask;
+    bool DetectingPlayer;
     public float MinShootTime;
     public float MaxShootTime;
     public GameObject Projectile;
-    public GameObject player;
     float SelectedShootTime;
     EnemyMovement enemyMovement;
 
     private void Awake()
     {
-        player = GameObject.Find("Player");
         enemyMovement = GetComponent<EnemyMovement>();
     }
 
@@ -27,7 +27,9 @@ public class EnemyAttack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Vector3.Distance(player.transform.position, transform.position) <= attackRange)
+        DetectingPlayer = Physics2D.OverlapCircle(transform.position, attackRange, PlayerMask);
+
+        if (DetectingPlayer)
         {
             if (enemyType == EnemyType.Projectile)
             {
@@ -37,9 +39,11 @@ public class EnemyAttack : MonoBehaviour
                     Instantiate(Projectile, transform.position, Quaternion.identity);
                 }
             }
+
+
             if (enemyType == EnemyType.Melee)
             {
-                enemyMovement.target = player.transform;
+                enemyMovement.target = PlayerMovementController.Instance.transform;
             }
         } else
         {
@@ -47,15 +51,19 @@ public class EnemyAttack : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player"))
         {
-            print("Hit");
+            collision.gameObject.GetComponent<PlayerMovementController>().Die();
             Destroy(gameObject);
         }
 
-
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            collision.gameObject.GetComponent<PlayerMovementController>().Die();
+            Destroy(gameObject);
+        }
     }
 
     private void OnDrawGizmos()

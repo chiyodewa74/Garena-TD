@@ -18,6 +18,12 @@ public class EnemyMovement : MonoBehaviour
         gm = FindAnyObjectByType<GameManager>();
     }
 
+    private void Start()
+    {
+        SpriteRenderer sr = GetComponent<SpriteRenderer>();
+        sr.flipX = target.position.x > transform.position.x;
+    }
+
     // Update is called once per frame
     void FixedUpdate()
     {

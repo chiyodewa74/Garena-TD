@@ -29,7 +29,7 @@ public class Projectile : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            print("Hit");
+            collision.gameObject.GetComponent<PlayerMovementController>().Die();
             Destroy(gameObject);
         }
     }

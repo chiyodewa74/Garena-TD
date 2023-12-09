@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class PlayerMovementController : MonoBehaviour
 {
+    public static PlayerMovementController Instance;
+    public GameObject CorpesLeft;
+    public GameObject CorpesRight;
     [SerializeField] float movementSpeed = 1f;
     CharacterRenderer charaRenderer;
     PlayerAttack playerAttack;
@@ -17,6 +20,11 @@ public class PlayerMovementController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         charaRenderer = GetComponent<CharacterRenderer>();
         playerAttack = GetComponent<PlayerAttack>();
+
+        if(Instance == null)
+        {
+            Instance = this;
+        }
     }
 
     private void FixedUpdate()
@@ -34,5 +42,20 @@ public class PlayerMovementController : MonoBehaviour
         {
             charaRenderer.SetDirection(movement);
         }
+    }
+
+    public void Die()
+    {
+        //anim.SetTrigger("Die");
+
+        if (transform.position.x < 0)
+        {
+            Instantiate(CorpesLeft, transform.position, Quaternion.identity);
+        }else
+        {
+            Instantiate(CorpesRight, transform.position, Quaternion.identity);
+        }
+
+        transform.position = new Vector2(-0.64f, 3.45f);
     }
 }
