@@ -103,7 +103,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyType: 0
-  attackRange: 500
+  attackRange: 3
   PlayerMask:
     serializedVersion: 2
     m_Bits: 8
