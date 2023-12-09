@@ -7,7 +7,7 @@ public class TextManager : MonoBehaviour
 {
     public GameManager gm;
     public EnemySpawner es;
-    public Text obj_text;
+    public SuperTextMesh obj_text;
     
     
     // Start is called before the first frame update

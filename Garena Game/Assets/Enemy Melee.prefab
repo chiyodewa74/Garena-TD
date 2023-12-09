@@ -110,6 +110,7 @@ MonoBehaviour:
   MinShootTime: 3
   MaxShootTime: 5
   Projectile: {fileID: 2409340216436869782, guid: 6b61472f237940244b59d66df3e8bce2, type: 3}
+  gm: {fileID: 0}
 --- !u!114 &1330477083000787220
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -231,3 +232,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 2
+  Vfx: {fileID: 4191887127265869115, guid: 95345f50ae3c76644b3729ec57a87c1e, type: 3}

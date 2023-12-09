@@ -32,6 +32,7 @@ MonoBehaviour:
     - Assembly-CSharp-firstpass
     - Assembly-CSharp
     - PsdPlugin
+    - Cinemachine
     - PPv2URPConverters
     - AllIn1SpriteShaderAssembly
     showAdvancedSettings: 0

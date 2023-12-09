@@ -2132,7 +2132,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerProjectile: {fileID: -1786321532114795395, guid: 235ef217869724f4ab5d63113a23f8c6, type: 3}
   playerCont: {fileID: 4772062997366877963, guid: 5879dbe934b62cd4f9674ca69ddd4464, type: 3}
-  playerWall: {fileID: 1282491848927788765, guid: b331985580490544ca120b4c28a26928, type: 3}
+  playerWallLeft: {fileID: 6130959775234366921, guid: 50b2243dbc0a76c40858628230ee9e3d, type: 3}
+  playerWallRight: {fileID: 1282491848927788765, guid: b331985580490544ca120b4c28a26928, type: 3}
   playerAttack: {fileID: 5622535145022596178, guid: 5879dbe934b62cd4f9674ca69ddd4464, type: 3}
 --- !u!1 &6981406923254520731
 GameObject:

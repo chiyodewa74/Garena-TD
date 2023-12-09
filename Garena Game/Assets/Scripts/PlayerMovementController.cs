@@ -10,8 +10,6 @@ public class PlayerMovementController : MonoBehaviour
     public GameObject CorpesLeft;
     public GameObject CorpesRight;
     [SerializeField] float movementSpeed = 1f;
-    [SerializeField] int minPlayerHealth = 1;
-    [SerializeField] int maxPlayerHealth = 5;
     CharacterRenderer charaRenderer;
     PlayerAttack playerAttack;
     public float horizontalInput;
@@ -69,7 +67,7 @@ public class PlayerMovementController : MonoBehaviour
         //anim.SetTrigger("Die");
 
         transform.position = new Vector2(-0.28f, 0.48f);
-        playerHealth = Mathf.Clamp(initialPlayerHealth, minPlayerHealth, maxPlayerHealth);
+        playerHealth = initialPlayerHealth;
 
         StartCoroutine(EnemyStunned(gm.stunTime));
     }
@@ -92,11 +90,11 @@ public class PlayerMovementController : MonoBehaviour
     {
         if (transform.position.x < 0)
         {
-            Instantiate(CorpesLeft, new Vector3(cellCoordinates.x, cellCoordinates.y, 0), Quaternion.Euler(0, 0, 45));
+            Instantiate(CorpesLeft, new Vector3(cellCoordinates.x, cellCoordinates.y, 0), Quaternion.identity);
         }
         else
         {
-            Instantiate(CorpesRight, new Vector3(cellCoordinates.x, cellCoordinates.y, 0), Quaternion.Euler(0, 0, -45));
+            Instantiate(CorpesRight, new Vector3(cellCoordinates.x, cellCoordinates.y, 0), Quaternion.identity);
         }
     }
 
