@@ -7,11 +7,13 @@ public class EnemyAttack : MonoBehaviour
     [SerializeField] EnemyType enemyType;
     [SerializeField] float attackRange;
     [SerializeField] LayerMask PlayerMask;
+    [SerializeField] AudioClip[] sounds;
     bool DetectingPlayer;
     public float MinShootTime;
     public float MaxShootTime;
     public GameObject Projectile;
     public GameManager gm;
+    private AudioSource source;
     float SelectedShootTime;
     EnemyMovement enemyMovement;
 
@@ -56,6 +58,12 @@ public class EnemyAttack : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            if (Random.Range(1, 3) == 2)
+            {
+                source.clip = sounds[Random.Range(0, sounds.Length)];
+                source.Play();
+            }
+
             collision.gameObject.GetComponent<PlayerMovementController>().TakeDamage(1);
             Destroy(gameObject);
         }

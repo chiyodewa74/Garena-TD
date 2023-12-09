@@ -48,8 +48,6 @@ public class PlayerMovementController : MonoBehaviour
         {
             charaRenderer.SetDirection(movement);
         }
-
-        
     }
 
     public void TakeDamage(int damage)
