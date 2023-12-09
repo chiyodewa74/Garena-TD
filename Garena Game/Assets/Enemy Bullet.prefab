@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 9143371086989459652}
   - component: {fileID: 9018887304354131832}
   - component: {fileID: 443380603149113573}
+  - component: {fileID: 3325440926769022390}
   m_Layer: 7
   m_Name: Enemy Bullet
   m_TagString: Enemy
@@ -217,3 +218,16 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &3325440926769022390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5987250172308849461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20b77872f7ec8ab4b89851175c23c383, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 2
