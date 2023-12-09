@@ -35,7 +35,7 @@ public class EnemySpawner : MonoBehaviour
                 }
             }
 
-            if (!gm.loseGame)
+            if (!gm.loseGame && !gm.isStunned)
             {
                 if (Time.time >= NextSpawn)
                 {

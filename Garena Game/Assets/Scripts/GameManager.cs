@@ -12,6 +12,8 @@ public class GameManager : MonoBehaviour
     public int Health;
     public bool loseGame;
     public bool winGame;
+    public bool isStunned;
+    public float stunTime;
 
     private void Awake()
     {

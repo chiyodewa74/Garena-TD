@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerMovementController : MonoBehaviour
 {
+    [SerializeField] GameManager gm;
+
     public static PlayerMovementController Instance;
     public GameObject CorpesLeft;
     public GameObject CorpesRight;
@@ -55,9 +57,9 @@ public class PlayerMovementController : MonoBehaviour
 
         //anim.SetTrigger("Die");
 
-        
-
         transform.position = new Vector2(-0.64f, 3.45f);
+
+        StartCoroutine(EnemyStunned(gm.stunTime));
     }
 
     // Convert world coordinates to grid coordinates
@@ -84,5 +86,12 @@ public class PlayerMovementController : MonoBehaviour
         {
             Instantiate(CorpesRight, new Vector3(cellCoordinates.x, cellCoordinates.y, 0), Quaternion.Euler(0, 0, -45));
         }
+    }
+
+    private IEnumerator EnemyStunned(float stunTime)
+    {
+        gm.isStunned = true;
+        yield return new WaitForSeconds(stunTime);
+        gm.isStunned = false;
     }
 }

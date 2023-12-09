@@ -11,12 +11,14 @@ public class EnemyAttack : MonoBehaviour
     public float MinShootTime;
     public float MaxShootTime;
     public GameObject Projectile;
+    public GameManager gm;
     float SelectedShootTime;
     EnemyMovement enemyMovement;
 
     private void Awake()
     {
         enemyMovement = GetComponent<EnemyMovement>();
+        gm = FindAnyObjectByType<GameManager>();
     }
 
     private void Start()
@@ -29,7 +31,7 @@ public class EnemyAttack : MonoBehaviour
     {
         DetectingPlayer = Physics2D.OverlapCircle(transform.position, attackRange, PlayerMask);
 
-        if (DetectingPlayer)
+        if (DetectingPlayer && !gm.isStunned)
         {
             if (enemyType == EnemyType.Projectile)
             {
@@ -55,6 +57,7 @@ public class EnemyAttack : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            Debug.Log(collision.gameObject.tag);
             collision.gameObject.GetComponent<PlayerMovementController>().Die();
             Destroy(gameObject);
         }

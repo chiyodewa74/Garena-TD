@@ -27,7 +27,10 @@ public class EnemyMovement : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        rb.position = Vector2.MoveTowards(transform.position, target.transform.position, Speed * Time.fixedDeltaTime);
+        if (!gm.isStunned)
+        {
+            rb.position = Vector2.MoveTowards(transform.position, target.transform.position, Speed * Time.fixedDeltaTime);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
