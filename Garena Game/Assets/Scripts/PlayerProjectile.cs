@@ -6,6 +6,8 @@ public class PlayerProjectile : MonoBehaviour
 {
     [SerializeField] float force;
 
+    public EnemyManager enemyManager;
+
     private Vector3 mousePos;
     private Camera mainCamera;
     private Rigidbody2D rb;
@@ -34,7 +36,7 @@ public class PlayerProjectile : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            print("Hit");
+            collision.gameObject.GetComponent<EnemyManager>().health -= 1;
             Destroy(gameObject);
         }
     }
