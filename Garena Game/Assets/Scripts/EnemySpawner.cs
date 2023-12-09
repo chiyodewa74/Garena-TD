@@ -52,7 +52,6 @@ public class EnemySpawner : MonoBehaviour
 
     private void TriggerUpgradePanel()
     {
-        Debug.Log("Upgrade panel triggered");
         Time.timeScale = 0;
         Instantiate(upgradePanel, Vector2.zero, Quaternion.identity).GetComponent<UpgradeButtonController>();
         /*

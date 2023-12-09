@@ -19,12 +19,14 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         loseGame = false;
+        winGame = false;
     }
 
     private void Update()
     {
         if (Health <= 0)
         {
+            loseGame = false;
             Time.timeScale = 0;
             losePanel.SetActive(true);
             if (Input.GetKeyDown(KeyCode.R))
@@ -34,10 +36,16 @@ public class GameManager : MonoBehaviour
             }
         }
 
-        if (enemySpawner.CurrentWave > enemySpawner.waves.Count)
+        if (enemySpawner.CurrentWave >= enemySpawner.waves.Count)
         {
-            winPanel.SetActive(true);
             winGame = true;
+            Time.timeScale = 0;
+            winPanel.SetActive(true);
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                Time.timeScale = 1;
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            }
         }
     }
 }
