@@ -56,7 +56,7 @@ public class EnemyAttack : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            collision.gameObject.GetComponent<PlayerMovementController>().Die();
+            collision.gameObject.GetComponent<PlayerMovementController>().playerHealth -= 1;
             Destroy(gameObject);
         }
     }

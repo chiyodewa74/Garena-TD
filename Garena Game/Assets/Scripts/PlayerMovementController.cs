@@ -10,6 +10,7 @@ public class PlayerMovementController : MonoBehaviour
     public GameObject CorpesLeft;
     public GameObject CorpesRight;
     [SerializeField] float movementSpeed = 1f;
+    [SerializeField] int initialPlayerHealth;
     CharacterRenderer charaRenderer;
     PlayerAttack playerAttack;
     public float horizontalInput;
@@ -28,6 +29,8 @@ public class PlayerMovementController : MonoBehaviour
         {
             Instance = this;
         }
+
+        playerHealth = initialPlayerHealth;
     }
 
     private void FixedUpdate()
@@ -64,6 +67,7 @@ public class PlayerMovementController : MonoBehaviour
         //anim.SetTrigger("Die");
 
         transform.position = new Vector2(-0.28f, 0.48f);
+        playerHealth = initialPlayerHealth;
 
         StartCoroutine(EnemyStunned(gm.stunTime));
     }

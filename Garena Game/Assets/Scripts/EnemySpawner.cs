@@ -25,6 +25,8 @@ public class EnemySpawner : MonoBehaviour
         {
             if (Time.time >= NextWave)
             {
+
+
                 CurrentWave++;
                 WaveText.text = "<b>Wave</b>: " + CurrentWave;
                 NextWave = Time.time + waves[CurrentWave - 1].WaveTime;
