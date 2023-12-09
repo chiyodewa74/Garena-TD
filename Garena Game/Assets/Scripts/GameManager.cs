@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
 
     public int Health;
     public bool loseGame;
+    public bool winGame;
 
     private void Awake()
     {
@@ -33,6 +34,7 @@ public class GameManager : MonoBehaviour
         if (enemySpawner.CurrentWave > enemySpawner.waves.Count)
         {
             winPanel.SetActive(true);
+            winGame = true;
             Debug.Log("Win!");
         }
     }

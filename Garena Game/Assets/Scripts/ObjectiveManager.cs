@@ -11,7 +11,6 @@ public class ObjectiveManager : MonoBehaviour
         if (collision.gameObject.CompareTag("Enemy"))
         {
             print("Lose Health!");
-            gm.Health -= 1;
         }
     }
 }

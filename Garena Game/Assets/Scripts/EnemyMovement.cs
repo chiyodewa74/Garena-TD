@@ -15,6 +15,7 @@ public class EnemyMovement : MonoBehaviour
     {
         MoneyPile = GameObject.Find("Money Pile").transform;                                                             
         rb = GetComponent<Rigidbody2D>();
+        gm = FindAnyObjectByType<GameManager>();
     }
 
     // Update is called once per frame

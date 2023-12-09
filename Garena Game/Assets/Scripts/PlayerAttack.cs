@@ -11,11 +11,17 @@ public class PlayerAttack : MonoBehaviour
 
     private Camera mainCamera;
     private Vector3 mousePos;
-    private bool canFire;
+    [SerializeField] bool canFire;
+    Animator anim;
+    public bool Throwing;
+    public Transform ThrowPoint;
+    PlayerMovementController playerMovement;
 
     private void Start()
     {
         mainCamera = Camera.main;
+        anim = GetComponent<Animator>();
+        playerMovement = GetComponent<PlayerMovementController>();
     }
 
     private void Update()
@@ -34,7 +40,23 @@ public class PlayerAttack : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0) && canFire)
         {
-            Instantiate(playerProjectile, transform.position, Quaternion.identity);
+            anim.SetTrigger("Throw");
+
+            if (playerMovement.horizontalInput != 0)
+            {
+                anim.SetInteger("X", (int)playerMovement.horizontalInput);
+            }else
+            {
+                anim.SetInteger("X", 1);
+            }
+
+            Throwing = true;
         }
+    }
+
+    public void ThrowProjectile()
+    {
+        Throwing = false;
+        Instantiate(playerProjectile, ThrowPoint.position, Quaternion.identity);
     }
 }

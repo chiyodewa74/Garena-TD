@@ -20,18 +20,26 @@ public class EnemySpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!gm.loseGame)
+        if(!gm.winGame)
         {
-            if (Time.time >= NextSpawn)
-            {
-                Instantiate(waves[CurrentWave - 1].Enemies[Random.Range(0, waves[CurrentWave - 1].Enemies.Count)], SpawnPoints[Random.Range(0, SpawnPoints.Count)].position, Quaternion.identity);
-                NextSpawn = Time.time + Random.Range(waves[CurrentWave - 1].MinSpawnTime, waves[CurrentWave - 1].MaxSpawnTime);
-            }
-
             if (Time.time >= NextWave)
             {
                 CurrentWave++;
                 NextWave = Time.time + waves[CurrentWave - 1].WaveTime;
+
+                if(CurrentWave - 1 > waves.Count)
+                {
+                    CurrentWave = waves.Count;
+                }
+            }
+
+            if (!gm.loseGame)
+            {
+                if (Time.time >= NextSpawn)
+                {
+                    Instantiate(waves[CurrentWave - 1].Enemies[Random.Range(0, waves[CurrentWave - 1].Enemies.Count)], SpawnPoints[Random.Range(0, SpawnPoints.Count)].position, Quaternion.identity);
+                    NextSpawn = Time.time + Random.Range(waves[CurrentWave - 1].MinSpawnTime, waves[CurrentWave - 1].MaxSpawnTime);
+                }
             }
         }
     }
