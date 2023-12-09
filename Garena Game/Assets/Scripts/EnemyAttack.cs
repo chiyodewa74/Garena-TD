@@ -58,12 +58,6 @@ public class EnemyAttack : MonoBehaviour
             collision.gameObject.GetComponent<PlayerMovementController>().Die();
             Destroy(gameObject);
         }
-
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            collision.gameObject.GetComponent<PlayerMovementController>().Die();
-            Destroy(gameObject);
-        }
     }
 
     private void OnDrawGizmos()
