@@ -5,13 +5,13 @@ using UnityEngine;
 public class EnemySpawner : MonoBehaviour
 {
     [SerializeField] GameManager gm;
+    [SerializeField] SuperTextMesh WaveText;
 
     public List<Transform> SpawnPoints;
     public List<Wave> waves;
     public int CurrentWave = 1;
     float NextSpawn;
     float NextWave;
-    SuperTextMesh WaveText;
 
     private void Start()
     {

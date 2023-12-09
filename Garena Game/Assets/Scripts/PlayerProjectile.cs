@@ -6,8 +6,6 @@ public class PlayerProjectile : MonoBehaviour
 {
     [SerializeField] float force;
 
-    public EnemyManager enemyManager;
-
     private Vector3 mousePos;
     private Camera mainCamera;
     private Rigidbody2D rb;
