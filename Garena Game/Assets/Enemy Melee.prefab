@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 9018887304354131832}
   - component: {fileID: 5885655587673364744}
   - component: {fileID: -5882200691586810096}
+  - component: {fileID: -804253764240551291}
   m_Layer: 7
   m_Name: Enemy Melee
   m_TagString: Enemy
@@ -58,7 +59,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 4f61cd32b4052e74f98497ed1fd9f580, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -233,3 +234,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 2
   Vfx: {fileID: 4191887127265869115, guid: 95345f50ae3c76644b3729ec57a87c1e, type: 3}
+--- !u!114 &-804253764240551291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5987250172308849461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee158225ee1e59f4791627785501d950, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shaderTypes: 3
+  normalStrength: 5
+  normalSmoothing: 1
+  computingNormal: 0

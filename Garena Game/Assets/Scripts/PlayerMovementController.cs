@@ -49,6 +49,23 @@ public class PlayerMovementController : MonoBehaviour
             charaRenderer.SetDirection(movement);
         }
 
+        
+    }
+
+    public void TakeDamage(int damage)
+    {
+        playerHealth -= damage;
+        GameObject.Find("DamageScreen").GetComponent<Animator>().SetTrigger("Damage");
+        Material mat = GetComponent<Renderer>().material;
+        mat.EnableKeyword("HITEFFECT_ON");
+
+        Invoke("ResetHighlight", 0.1f);
+    }
+
+    void ResetHighlight()
+    {
+        Material mat = GetComponent<Renderer>().material;
+        mat.DisableKeyword("HITEFFECT_ON");
         if (playerHealth <= 0)
         {
             Die();
