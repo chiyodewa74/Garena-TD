@@ -10,11 +10,11 @@ public class PlayerMovementController : MonoBehaviour
     public GameObject CorpesLeft;
     public GameObject CorpesRight;
     [SerializeField] float movementSpeed = 1f;
-    [SerializeField] int initialPlayerHealth;
     CharacterRenderer charaRenderer;
     PlayerAttack playerAttack;
     public float horizontalInput;
     public float verticalInput;
+    public int initialPlayerHealth;
     public int playerHealth;
 
     Rigidbody2D rb;

@@ -6,7 +6,6 @@ public class PlayerAttack : MonoBehaviour
 {
     // [SerializeField] private LayerMask groundMask;
     [SerializeField] float timer;
-    [SerializeField] float timeBetweenFiring;
     public GameObject playerProjectile;
 
     private Camera mainCamera;
@@ -14,6 +13,7 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] bool canFire;
     Animator anim;
     public bool Throwing;
+    public float timeBetweenFiring;
     public Transform ThrowPoint;
     PlayerMovementController playerMovement;
 

@@ -10,6 +10,8 @@ public class PlayerProjectile : MonoBehaviour
     private Camera mainCamera;
     private Rigidbody2D rb;
 
+    public int damage = 1;
+
     static Object[] spriteArray;
 
     private void Awake()
@@ -49,7 +51,7 @@ public class PlayerProjectile : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            collision.gameObject.GetComponent<EnemyManager>().health -= 1;
+            collision.gameObject.GetComponent<EnemyManager>().health -= damage;
             Destroy(gameObject);
         }
     }
