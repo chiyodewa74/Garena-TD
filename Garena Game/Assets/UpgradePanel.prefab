@@ -1,5 +1,80 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2837817973049517191
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 159518465412936732}
+  - component: {fileID: 5973978211921814159}
+  - component: {fileID: 8560565143417117493}
+  m_Layer: 5
+  m_Name: Damage Container
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &159518465412936732
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2837817973049517191}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4119134970711240860}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -300, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &5973978211921814159
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2837817973049517191}
+  m_CullTransparentMesh: 1
+--- !u!114 &8560565143417117493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2837817973049517191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: cd0dd6cb0f732ed47a335e1fe60a0819, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &3257200379114177438
 GameObject:
   m_ObjectHideFlags: 0
@@ -27,7 +102,7 @@ RectTransform:
   m_GameObject: {fileID: 3257200379114177438}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4119134970711240860}
@@ -111,7 +186,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -300, y: -100}
+  m_AnchoredPosition: {x: -300, y: -108}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2882403815923466401
@@ -244,7 +319,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -100}
+  m_AnchoredPosition: {x: 0, y: -108}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &852239462018108311
@@ -400,7 +475,7 @@ MonoBehaviour:
   showEventFoldout: 0
   showBetaFoldout: 0
   info:
-  - pos: {x: -41.5, y: 1, z: 0}
+  - pos: {x: -59.5, y: 1, z: 0}
     offset: {x: 0, y: 0, z: 0}
     lineSpacing: 1
     isEndOfParagraph: 0
@@ -440,7 +515,7 @@ MonoBehaviour:
     chSize: 14
     submeshChange: 0
     invoked: 1
-  - pos: {x: -32.5, y: 1, z: 0}
+  - pos: {x: -50.5, y: 1, z: 0}
     offset: {x: 0, y: 0, z: 0}
     lineSpacing: 1
     isEndOfParagraph: 0
@@ -480,7 +555,7 @@ MonoBehaviour:
     chSize: 14
     submeshChange: 0
     invoked: 1
-  - pos: {x: -24.5, y: 1, z: 0}
+  - pos: {x: -47.5, y: 1, z: 0}
     offset: {x: 0, y: 0, z: 0}
     lineSpacing: 1
     isEndOfParagraph: 0
@@ -520,7 +595,7 @@ MonoBehaviour:
     chSize: 14
     submeshChange: 0
     invoked: 1
-  - pos: {x: -16.5, y: 1, z: 0}
+  - pos: {x: -42.5, y: 1, z: 0}
     offset: {x: 0, y: 0, z: 0}
     lineSpacing: 1
     isEndOfParagraph: 0
@@ -560,7 +635,7 @@ MonoBehaviour:
     chSize: 14
     submeshChange: 0
     invoked: 1
-  - pos: {x: -8.5, y: 1, z: 0}
+  - pos: {x: -34.5, y: 1, z: 0}
     offset: {x: 0, y: 0, z: 0}
     lineSpacing: 1
     isEndOfParagraph: 0
@@ -600,7 +675,7 @@ MonoBehaviour:
     chSize: 14
     submeshChange: 0
     invoked: 1
-  - pos: {x: -3.5, y: 1, z: 0}
+  - pos: {x: -30.5, y: 1, z: 0}
     offset: {x: 0, y: 0, z: 0}
     lineSpacing: 1
     isEndOfParagraph: 0
@@ -640,7 +715,7 @@ MonoBehaviour:
     chSize: 14
     submeshChange: 0
     invoked: 1
-  - pos: {x: 0.5, y: 1, z: 0}
+  - pos: {x: -20.5, y: 1, z: 0}
     offset: {x: 0, y: 0, z: 0}
     lineSpacing: 1
     isEndOfParagraph: 0
@@ -680,7 +755,7 @@ MonoBehaviour:
     chSize: 14
     submeshChange: 0
     invoked: 1
-  - pos: {x: 9.5, y: 1, z: 0}
+  - pos: {x: -12.5, y: 1, z: 0}
     offset: {x: 0, y: 0, z: 0}
     lineSpacing: 1
     isEndOfParagraph: 0
@@ -720,7 +795,7 @@ MonoBehaviour:
     chSize: 14
     submeshChange: 0
     invoked: 1
-  - pos: {x: 17.5, y: 1, z: 0}
+  - pos: {x: -8.5, y: 1, z: 0}
     offset: {x: 0, y: 0, z: 0}
     lineSpacing: 1
     isEndOfParagraph: 0
@@ -760,7 +835,7 @@ MonoBehaviour:
     chSize: 14
     submeshChange: 0
     invoked: 1
-  - pos: {x: 21.5, y: 1, z: 0}
+  - pos: {x: -0.5, y: 1, z: 0}
     offset: {x: 0, y: 0, z: 0}
     lineSpacing: 1
     isEndOfParagraph: 0
@@ -800,7 +875,7 @@ MonoBehaviour:
     chSize: 14
     submeshChange: 0
     invoked: 1
-  - pos: {x: 25.5, y: 1, z: 0}
+  - pos: {x: 3.5, y: 1, z: 0}
     offset: {x: 0, y: 0, z: 0}
     lineSpacing: 1
     isEndOfParagraph: 0
@@ -840,7 +915,7 @@ MonoBehaviour:
     chSize: 14
     submeshChange: 0
     invoked: 1
-  - pos: {x: 33.5, y: 1, z: 0}
+  - pos: {x: 13.5, y: 1, z: 0}
     offset: {x: 0, y: 0, z: 0}
     lineSpacing: 1
     isEndOfParagraph: 0
@@ -880,12 +955,212 @@ MonoBehaviour:
     chSize: 14
     submeshChange: 0
     invoked: 1
+  - pos: {x: 21.5, y: 1, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1
+    isEndOfParagraph: 0
+    readTime: 0
+    unreadTime: 0
+    line: 0
+    rawIndex: 12
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
+    size: {x: 14, y: 14}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 14
+    submeshChange: 0
+    invoked: 1
+  - pos: {x: 29.5, y: 1, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1
+    isEndOfParagraph: 0
+    readTime: 0
+    unreadTime: 0
+    line: 0
+    rawIndex: 13
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
+    size: {x: 14, y: 14}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 14
+    submeshChange: 0
+    invoked: 1
+  - pos: {x: 34.5, y: 1, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1
+    isEndOfParagraph: 0
+    readTime: 0
+    unreadTime: 0
+    line: 0
+    rawIndex: 14
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
+    size: {x: 14, y: 14}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 14
+    submeshChange: 0
+    invoked: 1
+  - pos: {x: 42.5, y: 1, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1
+    isEndOfParagraph: 0
+    readTime: 0
+    unreadTime: 0
+    line: 0
+    rawIndex: 15
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
+    size: {x: 14, y: 14}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 14
+    submeshChange: 0
+    invoked: 1
+  - pos: {x: 50.5, y: 1, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1
+    isEndOfParagraph: 0
+    readTime: 0
+    unreadTime: 0
+    line: 0
+    rawIndex: 16
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
+    size: {x: 14, y: 14}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 14
+    submeshChange: 0
+    invoked: 1
   lineHeights:
   - 14
   - 14
-  _text: Super Button
-  drawText: Super Button
-  hyphenedText: Super Button
+  _text: Fire Rate Upgrade
+  drawText: Fire Rate Upgrade
+  hyphenedText: Fire Rate Upgrade
   font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   _color32:
     serializedVersion: 2
@@ -937,23 +1212,23 @@ MonoBehaviour:
   textMesh: {fileID: 0}
   rawTopLeftBounds: {x: 80, y: -15, z: 0}
   rawBottomRightBounds: {x: -80, y: 15, z: 0}
-  rawBottomRightTextBounds: {x: 83, y: -14, z: 0}
-  topLeftBounds: {x: 726.25, y: 138.25, z: 0}
-  topRightBounds: {x: 886.25, y: 138.25, z: 0}
-  bottomLeftBounds: {x: 726.25, y: 108.25, z: 0}
-  bottomRightBounds: {x: 886.25, y: 108.25, z: 0}
-  centerBounds: {x: 806.25, y: 123.25, z: 0}
-  topLeftTextBounds: {x: 764.75, y: 130.25, z: 0}
-  topRightTextBounds: {x: 847.75, y: 130.25, z: 0}
-  bottomLeftTextBounds: {x: 764.75, y: 116.25, z: 0}
-  bottomRightTextBounds: {x: 847.75, y: 116.25, z: 0}
-  centerTextBounds: {x: 806.25, y: 123.25, z: 0}
-  finalTopLeftTextBounds: {x: 764.75, y: 130.25, z: 0}
-  finalTopRightTextBounds: {x: 847.75, y: 130.25, z: 0}
-  finalBottomLeftTextBounds: {x: 764.75, y: 116.25, z: 0}
-  finalBottomRightTextBounds: {x: 847.75, y: 116.25, z: 0}
-  finalCenterTextBounds: {x: 806.25, y: 123.25, z: 0}
-  unwrappedBottomRightTextBounds: {x: 83, y: -14, z: 0}
+  rawBottomRightTextBounds: {x: 119, y: -14, z: 0}
+  topLeftBounds: {x: 675.25, y: 130.25, z: 0}
+  topRightBounds: {x: 835.25, y: 130.25, z: 0}
+  bottomLeftBounds: {x: 675.25, y: 100.25, z: 0}
+  bottomRightBounds: {x: 835.25, y: 100.25, z: 0}
+  centerBounds: {x: 755.25, y: 115.25, z: 0}
+  topLeftTextBounds: {x: 695.75, y: 122.25, z: 0}
+  topRightTextBounds: {x: 814.75, y: 122.25, z: 0}
+  bottomLeftTextBounds: {x: 695.75, y: 108.25, z: 0}
+  bottomRightTextBounds: {x: 814.75, y: 108.25, z: 0}
+  centerTextBounds: {x: 755.25, y: 115.25, z: 0}
+  finalTopLeftTextBounds: {x: 695.75, y: 122.25, z: 0}
+  finalTopRightTextBounds: {x: 814.75, y: 122.25, z: 0}
+  finalBottomLeftTextBounds: {x: 695.75, y: 108.25, z: 0}
+  finalBottomRightTextBounds: {x: 814.75, y: 108.25, z: 0}
+  finalCenterTextBounds: {x: 755.25, y: 115.25, z: 0}
+  unwrappedBottomRightTextBounds: {x: 118, y: -14, z: 0}
   onCompleteEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -987,9 +1262,9 @@ MonoBehaviour:
   rtl: 0
   _fade: 1
   bestFit: 0
-  latestNumber: 11
+  latestNumber: 16
   currentUnReadTime: 0
-  preParsedText: Super Button
+  preParsedText: Fire Rate Upgrade
 --- !u!222 &1725231757566379610
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -998,6 +1273,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4094472051519357161}
   m_CullTransparentMesh: 0
+--- !u!1 &4129013765845853910
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2836738522573124093}
+  - component: {fileID: 5089009414369510154}
+  - component: {fileID: 6188481074667063591}
+  m_Layer: 5
+  m_Name: Speed Container
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2836738522573124093
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4129013765845853910}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4119134970711240860}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 300, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &5089009414369510154
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4129013765845853910}
+  m_CullTransparentMesh: 1
+--- !u!114 &6188481074667063591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4129013765845853910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: cd0dd6cb0f732ed47a335e1fe60a0819, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &5530382151189780570
 GameObject:
   m_ObjectHideFlags: 0
@@ -1057,7 +1407,7 @@ MonoBehaviour:
   showEventFoldout: 0
   showBetaFoldout: 0
   info:
-  - pos: {x: -41.5, y: 1, z: 0}
+  - pos: {x: -57, y: 1, z: 0}
     offset: {x: 0, y: 0, z: 0}
     lineSpacing: 1
     isEndOfParagraph: 0
@@ -1097,7 +1447,7 @@ MonoBehaviour:
     chSize: 14
     submeshChange: 0
     invoked: 1
-  - pos: {x: -32.5, y: 1, z: 0}
+  - pos: {x: -47, y: 1, z: 0}
     offset: {x: 0, y: 0, z: 0}
     lineSpacing: 1
     isEndOfParagraph: 0
@@ -1137,7 +1487,7 @@ MonoBehaviour:
     chSize: 14
     submeshChange: 0
     invoked: 1
-  - pos: {x: -24.5, y: 1, z: 0}
+  - pos: {x: -39, y: 1, z: 0}
     offset: {x: 0, y: 0, z: 0}
     lineSpacing: 1
     isEndOfParagraph: 0
@@ -1177,7 +1527,7 @@ MonoBehaviour:
     chSize: 14
     submeshChange: 0
     invoked: 1
-  - pos: {x: -16.5, y: 1, z: 0}
+  - pos: {x: -27, y: 1, z: 0}
     offset: {x: 0, y: 0, z: 0}
     lineSpacing: 1
     isEndOfParagraph: 0
@@ -1217,7 +1567,7 @@ MonoBehaviour:
     chSize: 14
     submeshChange: 0
     invoked: 1
-  - pos: {x: -8.5, y: 1, z: 0}
+  - pos: {x: -19, y: 1, z: 0}
     offset: {x: 0, y: 0, z: 0}
     lineSpacing: 1
     isEndOfParagraph: 0
@@ -1257,7 +1607,7 @@ MonoBehaviour:
     chSize: 14
     submeshChange: 0
     invoked: 1
-  - pos: {x: -3.5, y: 1, z: 0}
+  - pos: {x: -11, y: 1, z: 0}
     offset: {x: 0, y: 0, z: 0}
     lineSpacing: 1
     isEndOfParagraph: 0
@@ -1297,7 +1647,7 @@ MonoBehaviour:
     chSize: 14
     submeshChange: 0
     invoked: 1
-  - pos: {x: 0.5, y: 1, z: 0}
+  - pos: {x: -3, y: 1, z: 0}
     offset: {x: 0, y: 0, z: 0}
     lineSpacing: 1
     isEndOfParagraph: 0
@@ -1337,7 +1687,7 @@ MonoBehaviour:
     chSize: 14
     submeshChange: 0
     invoked: 1
-  - pos: {x: 9.5, y: 1, z: 0}
+  - pos: {x: 1, y: 1, z: 0}
     offset: {x: 0, y: 0, z: 0}
     lineSpacing: 1
     isEndOfParagraph: 0
@@ -1377,7 +1727,7 @@ MonoBehaviour:
     chSize: 14
     submeshChange: 0
     invoked: 1
-  - pos: {x: 17.5, y: 1, z: 0}
+  - pos: {x: 11, y: 1, z: 0}
     offset: {x: 0, y: 0, z: 0}
     lineSpacing: 1
     isEndOfParagraph: 0
@@ -1417,7 +1767,7 @@ MonoBehaviour:
     chSize: 14
     submeshChange: 0
     invoked: 1
-  - pos: {x: 21.5, y: 1, z: 0}
+  - pos: {x: 19, y: 1, z: 0}
     offset: {x: 0, y: 0, z: 0}
     lineSpacing: 1
     isEndOfParagraph: 0
@@ -1457,7 +1807,7 @@ MonoBehaviour:
     chSize: 14
     submeshChange: 0
     invoked: 1
-  - pos: {x: 25.5, y: 1, z: 0}
+  - pos: {x: 27, y: 1, z: 0}
     offset: {x: 0, y: 0, z: 0}
     lineSpacing: 1
     isEndOfParagraph: 0
@@ -1497,7 +1847,7 @@ MonoBehaviour:
     chSize: 14
     submeshChange: 0
     invoked: 1
-  - pos: {x: 33.5, y: 1, z: 0}
+  - pos: {x: 32, y: 1, z: 0}
     offset: {x: 0, y: 0, z: 0}
     lineSpacing: 1
     isEndOfParagraph: 0
@@ -1537,12 +1887,92 @@ MonoBehaviour:
     chSize: 14
     submeshChange: 0
     invoked: 1
+  - pos: {x: 40, y: 1, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1
+    isEndOfParagraph: 0
+    readTime: 0
+    unreadTime: 0
+    line: 0
+    rawIndex: 12
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
+    size: {x: 14, y: 14}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 14
+    submeshChange: 0
+    invoked: 1
+  - pos: {x: 48, y: 1, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1
+    isEndOfParagraph: 0
+    readTime: 0
+    unreadTime: 0
+    line: 0
+    rawIndex: 13
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
+    size: {x: 14, y: 14}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 14
+    submeshChange: 0
+    invoked: 1
   lineHeights:
   - 14
   - 14
-  _text: Super Button
-  drawText: Super Button
-  hyphenedText: Super Button
+  _text: Damage Upgrade
+  drawText: Damage Upgrade
+  hyphenedText: Damage Upgrade
   font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   _color32:
     serializedVersion: 2
@@ -1594,23 +2024,23 @@ MonoBehaviour:
   textMesh: {fileID: 0}
   rawTopLeftBounds: {x: 80, y: -15, z: 0}
   rawBottomRightBounds: {x: -80, y: 15, z: 0}
-  rawBottomRightTextBounds: {x: 83, y: -14, z: 0}
-  topLeftBounds: {x: 126.25, y: 138.25, z: 0}
-  topRightBounds: {x: 286.25, y: 138.25, z: 0}
-  bottomLeftBounds: {x: 126.25, y: 108.25, z: 0}
-  bottomRightBounds: {x: 286.25, y: 108.25, z: 0}
-  centerBounds: {x: 206.25, y: 123.25, z: 0}
-  topLeftTextBounds: {x: 164.75, y: 130.25, z: 0}
-  topRightTextBounds: {x: 247.75, y: 130.25, z: 0}
-  bottomLeftTextBounds: {x: 164.75, y: 116.25, z: 0}
-  bottomRightTextBounds: {x: 247.75, y: 116.25, z: 0}
-  centerTextBounds: {x: 206.25, y: 123.25, z: 0}
-  finalTopLeftTextBounds: {x: 164.75, y: 130.25, z: 0}
-  finalTopRightTextBounds: {x: 247.75, y: 130.25, z: 0}
-  finalBottomLeftTextBounds: {x: 164.75, y: 116.25, z: 0}
-  finalBottomRightTextBounds: {x: 247.75, y: 116.25, z: 0}
-  finalCenterTextBounds: {x: 206.25, y: 123.25, z: 0}
-  unwrappedBottomRightTextBounds: {x: 83, y: -14, z: 0}
+  rawBottomRightTextBounds: {x: 114, y: -14, z: 0}
+  topLeftBounds: {x: 75.25, y: 130.25, z: 0}
+  topRightBounds: {x: 235.25, y: 130.25, z: 0}
+  bottomLeftBounds: {x: 75.25, y: 100.25, z: 0}
+  bottomRightBounds: {x: 235.25, y: 100.25, z: 0}
+  centerBounds: {x: 155.25, y: 115.25, z: 0}
+  topLeftTextBounds: {x: 98.25, y: 122.25, z: 0}
+  topRightTextBounds: {x: 212.25, y: 122.25, z: 0}
+  bottomLeftTextBounds: {x: 98.25, y: 108.25, z: 0}
+  bottomRightTextBounds: {x: 212.25, y: 108.25, z: 0}
+  centerTextBounds: {x: 155.25, y: 115.25, z: 0}
+  finalTopLeftTextBounds: {x: 98.25, y: 122.25, z: 0}
+  finalTopRightTextBounds: {x: 212.25, y: 122.25, z: 0}
+  finalBottomLeftTextBounds: {x: 98.25, y: 108.25, z: 0}
+  finalBottomRightTextBounds: {x: 212.25, y: 108.25, z: 0}
+  finalCenterTextBounds: {x: 155.25, y: 115.25, z: 0}
+  unwrappedBottomRightTextBounds: {x: 113, y: -14, z: 0}
   onCompleteEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -1644,9 +2074,9 @@ MonoBehaviour:
   rtl: 0
   _fade: 1
   bestFit: 0
-  latestNumber: 11
+  latestNumber: 13
   currentUnReadTime: 0
-  preParsedText: Super Button
+  preParsedText: Damage Upgrade
 --- !u!222 &4369158682785988357
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1700,6 +2130,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de66413e7db95e3429218d99afcc2f65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerProjectile: {fileID: -1786321532114795395, guid: 235ef217869724f4ab5d63113a23f8c6, type: 3}
+  playerCont: {fileID: 4772062997366877963, guid: 5879dbe934b62cd4f9674ca69ddd4464, type: 3}
+  playerWall: {fileID: 1282491848927788765, guid: b331985580490544ca120b4c28a26928, type: 3}
+  playerAttack: {fileID: 5622535145022596178, guid: 5879dbe934b62cd4f9674ca69ddd4464, type: 3}
 --- !u!1 &6981406923254520731
 GameObject:
   m_ObjectHideFlags: 0
@@ -1759,7 +2193,7 @@ MonoBehaviour:
   showEventFoldout: 0
   showBetaFoldout: 0
   info:
-  - pos: {x: -41.5, y: 1, z: 0}
+  - pos: {x: -50.5, y: 1, z: 0}
     offset: {x: 0, y: 0, z: 0}
     lineSpacing: 1
     isEndOfParagraph: 0
@@ -1799,7 +2233,7 @@ MonoBehaviour:
     chSize: 14
     submeshChange: 0
     invoked: 1
-  - pos: {x: -32.5, y: 1, z: 0}
+  - pos: {x: -40.5, y: 1, z: 0}
     offset: {x: 0, y: 0, z: 0}
     lineSpacing: 1
     isEndOfParagraph: 0
@@ -1839,7 +2273,7 @@ MonoBehaviour:
     chSize: 14
     submeshChange: 0
     invoked: 1
-  - pos: {x: -24.5, y: 1, z: 0}
+  - pos: {x: -32.5, y: 1, z: 0}
     offset: {x: 0, y: 0, z: 0}
     lineSpacing: 1
     isEndOfParagraph: 0
@@ -1879,7 +2313,7 @@ MonoBehaviour:
     chSize: 14
     submeshChange: 0
     invoked: 1
-  - pos: {x: -16.5, y: 1, z: 0}
+  - pos: {x: -24.5, y: 1, z: 0}
     offset: {x: 0, y: 0, z: 0}
     lineSpacing: 1
     isEndOfParagraph: 0
@@ -1919,7 +2353,7 @@ MonoBehaviour:
     chSize: 14
     submeshChange: 0
     invoked: 1
-  - pos: {x: -8.5, y: 1, z: 0}
+  - pos: {x: -21.5, y: 1, z: 0}
     offset: {x: 0, y: 0, z: 0}
     lineSpacing: 1
     isEndOfParagraph: 0
@@ -1959,7 +2393,7 @@ MonoBehaviour:
     chSize: 14
     submeshChange: 0
     invoked: 1
-  - pos: {x: -3.5, y: 1, z: 0}
+  - pos: {x: -17.5, y: 1, z: 0}
     offset: {x: 0, y: 0, z: 0}
     lineSpacing: 1
     isEndOfParagraph: 0
@@ -1999,7 +2433,7 @@ MonoBehaviour:
     chSize: 14
     submeshChange: 0
     invoked: 1
-  - pos: {x: 0.5, y: 1, z: 0}
+  - pos: {x: -9.5, y: 1, z: 0}
     offset: {x: 0, y: 0, z: 0}
     lineSpacing: 1
     isEndOfParagraph: 0
@@ -2039,7 +2473,7 @@ MonoBehaviour:
     chSize: 14
     submeshChange: 0
     invoked: 1
-  - pos: {x: 9.5, y: 1, z: 0}
+  - pos: {x: -5.5, y: 1, z: 0}
     offset: {x: 0, y: 0, z: 0}
     lineSpacing: 1
     isEndOfParagraph: 0
@@ -2079,7 +2513,7 @@ MonoBehaviour:
     chSize: 14
     submeshChange: 0
     invoked: 1
-  - pos: {x: 17.5, y: 1, z: 0}
+  - pos: {x: 4.5, y: 1, z: 0}
     offset: {x: 0, y: 0, z: 0}
     lineSpacing: 1
     isEndOfParagraph: 0
@@ -2119,7 +2553,7 @@ MonoBehaviour:
     chSize: 14
     submeshChange: 0
     invoked: 1
-  - pos: {x: 21.5, y: 1, z: 0}
+  - pos: {x: 12.5, y: 1, z: 0}
     offset: {x: 0, y: 0, z: 0}
     lineSpacing: 1
     isEndOfParagraph: 0
@@ -2159,7 +2593,7 @@ MonoBehaviour:
     chSize: 14
     submeshChange: 0
     invoked: 1
-  - pos: {x: 25.5, y: 1, z: 0}
+  - pos: {x: 20.5, y: 1, z: 0}
     offset: {x: 0, y: 0, z: 0}
     lineSpacing: 1
     isEndOfParagraph: 0
@@ -2199,7 +2633,7 @@ MonoBehaviour:
     chSize: 14
     submeshChange: 0
     invoked: 1
-  - pos: {x: 33.5, y: 1, z: 0}
+  - pos: {x: 25.5, y: 1, z: 0}
     offset: {x: 0, y: 0, z: 0}
     lineSpacing: 1
     isEndOfParagraph: 0
@@ -2239,12 +2673,92 @@ MonoBehaviour:
     chSize: 14
     submeshChange: 0
     invoked: 1
+  - pos: {x: 33.5, y: 1, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1
+    isEndOfParagraph: 0
+    readTime: 0
+    unreadTime: 0
+    line: 0
+    rawIndex: 12
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
+    size: {x: 14, y: 14}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 14
+    submeshChange: 0
+    invoked: 1
+  - pos: {x: 41.5, y: 1, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    lineSpacing: 1
+    isEndOfParagraph: 0
+    readTime: 0
+    unreadTime: 0
+    line: 0
+    rawIndex: 13
+    indent: 0
+    drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
+    size: {x: 14, y: 14}
+    alignment: 1
+    drawOrder: 0
+    ev: []
+    ev2: []
+    colorData: {fileID: 0}
+    gradientData: {fileID: 0}
+    textureData: {fileID: 0}
+    delayData: {fileID: 0}
+    waveData: {fileID: 0}
+    jitterData: {fileID: 0}
+    readDelay: 0
+    audioClipData: {fileID: 0}
+    stopPreviousSound: 1
+    pitchMode: 0
+    overridePitch: 1
+    minPitch: 0.9
+    maxPitch: 1.2
+    speedReadPitch: 0
+    fontData: {fileID: 0}
+    quadData: {fileID: 0}
+    isQuad: 0
+    quadIndex: -1
+    materialData: {fileID: 0}
+    soundClipData: {fileID: 0}
+    IdxIdentifier: 0
+    InfoInUse: 0
+    chSize: 14
+    submeshChange: 0
+    invoked: 1
   lineHeights:
   - 14
   - 14
-  _text: Super Button
-  drawText: Super Button
-  hyphenedText: Super Button
+  _text: Health Upgrade
+  drawText: Health Upgrade
+  hyphenedText: Health Upgrade
   font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   _color32:
     serializedVersion: 2
@@ -2296,23 +2810,23 @@ MonoBehaviour:
   textMesh: {fileID: 0}
   rawTopLeftBounds: {x: 80, y: -15, z: 0}
   rawBottomRightBounds: {x: -80, y: 15, z: 0}
-  rawBottomRightTextBounds: {x: 83, y: -14, z: 0}
-  topLeftBounds: {x: 426.25, y: 138.25, z: 0}
-  topRightBounds: {x: 586.25, y: 138.25, z: 0}
-  bottomLeftBounds: {x: 426.25, y: 108.25, z: 0}
-  bottomRightBounds: {x: 586.25, y: 108.25, z: 0}
-  centerBounds: {x: 506.25, y: 123.25, z: 0}
-  topLeftTextBounds: {x: 464.75, y: 130.25, z: 0}
-  topRightTextBounds: {x: 547.75, y: 130.25, z: 0}
-  bottomLeftTextBounds: {x: 464.75, y: 116.25, z: 0}
-  bottomRightTextBounds: {x: 547.75, y: 116.25, z: 0}
-  centerTextBounds: {x: 506.25, y: 123.25, z: 0}
-  finalTopLeftTextBounds: {x: 464.75, y: 130.25, z: 0}
-  finalTopRightTextBounds: {x: 547.75, y: 130.25, z: 0}
-  finalBottomLeftTextBounds: {x: 464.75, y: 116.25, z: 0}
-  finalBottomRightTextBounds: {x: 547.75, y: 116.25, z: 0}
-  finalCenterTextBounds: {x: 506.25, y: 123.25, z: 0}
-  unwrappedBottomRightTextBounds: {x: 83, y: -14, z: 0}
+  rawBottomRightTextBounds: {x: 101, y: -14, z: 0}
+  topLeftBounds: {x: 375.25, y: 130.25, z: 0}
+  topRightBounds: {x: 535.25, y: 130.25, z: 0}
+  bottomLeftBounds: {x: 375.25, y: 100.25, z: 0}
+  bottomRightBounds: {x: 535.25, y: 100.25, z: 0}
+  centerBounds: {x: 455.25, y: 115.25, z: 0}
+  topLeftTextBounds: {x: 404.75, y: 122.25, z: 0}
+  topRightTextBounds: {x: 505.75, y: 122.25, z: 0}
+  bottomLeftTextBounds: {x: 404.75, y: 108.25, z: 0}
+  bottomRightTextBounds: {x: 505.75, y: 108.25, z: 0}
+  centerTextBounds: {x: 455.25, y: 115.25, z: 0}
+  finalTopLeftTextBounds: {x: 404.75, y: 122.25, z: 0}
+  finalTopRightTextBounds: {x: 505.75, y: 122.25, z: 0}
+  finalBottomLeftTextBounds: {x: 404.75, y: 108.25, z: 0}
+  finalBottomRightTextBounds: {x: 505.75, y: 108.25, z: 0}
+  finalCenterTextBounds: {x: 455.25, y: 115.25, z: 0}
+  unwrappedBottomRightTextBounds: {x: 100, y: -14, z: 0}
   onCompleteEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -2346,9 +2860,9 @@ MonoBehaviour:
   rtl: 0
   _fade: 1
   bestFit: 0
-  latestNumber: 11
+  latestNumber: 13
   currentUnReadTime: 0
-  preParsedText: Super Button
+  preParsedText: Health Upgrade
 --- !u!222 &729278219064240041
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2384,7 +2898,7 @@ RectTransform:
   m_GameObject: {fileID: 6994481104226963066}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4119134970711240860}
@@ -2432,6 +2946,81 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!1 &7079049920863444091
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5934697370198341517}
+  - component: {fileID: 1486069222255784889}
+  - component: {fileID: 4098495186604588710}
+  m_Layer: 5
+  m_Name: Health Container
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &5934697370198341517
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7079049920863444091}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4119134970711240860}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &1486069222255784889
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7079049920863444091}
+  m_CullTransparentMesh: 1
+--- !u!114 &4098495186604588710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7079049920863444091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: cd0dd6cb0f732ed47a335e1fe60a0819, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &7945360419682585768
 GameObject:
   m_ObjectHideFlags: 0
@@ -2459,7 +3048,7 @@ RectTransform:
   m_GameObject: {fileID: 7945360419682585768}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4119134970711240860}
@@ -2543,7 +3132,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 300, y: -100}
+  m_AnchoredPosition: {x: 300, y: -108}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3793925158349133751
@@ -2671,6 +3260,9 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 2836738522573124093}
+  - {fileID: 5934697370198341517}
+  - {fileID: 159518465412936732}
   - {fileID: 368830228208158769}
   - {fileID: 6798356000220942412}
   - {fileID: 6185746888291496358}

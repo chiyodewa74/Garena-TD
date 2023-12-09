@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class PlayerWall : MonoBehaviour
 {
-    public int Health = 3;
+    [SerializeField] int minHealth = 1;
+    [SerializeField] int maxHealth = 5;
+
+    public int Health = 1;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {

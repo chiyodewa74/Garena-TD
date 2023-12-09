@@ -10,6 +10,8 @@ public class PlayerMovementController : MonoBehaviour
     public GameObject CorpesLeft;
     public GameObject CorpesRight;
     [SerializeField] float movementSpeed = 1f;
+    [SerializeField] int minPlayerHealth = 1;
+    [SerializeField] int maxPlayerHealth = 5;
     CharacterRenderer charaRenderer;
     PlayerAttack playerAttack;
     public float horizontalInput;
@@ -67,7 +69,7 @@ public class PlayerMovementController : MonoBehaviour
         //anim.SetTrigger("Die");
 
         transform.position = new Vector2(-0.28f, 0.48f);
-        playerHealth = initialPlayerHealth;
+        playerHealth = Mathf.Clamp(initialPlayerHealth, minPlayerHealth, maxPlayerHealth);
 
         StartCoroutine(EnemyStunned(gm.stunTime));
     }

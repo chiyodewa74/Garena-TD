@@ -5,6 +5,8 @@ using UnityEngine;
 public class PlayerProjectile : MonoBehaviour
 {
     [SerializeField] float force;
+    [SerializeField] int minDamage = 1;
+    [SerializeField] int maxDamage = 5;
 
     private Vector3 mousePos;
     private Camera mainCamera;
@@ -51,7 +53,7 @@ public class PlayerProjectile : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            collision.gameObject.GetComponent<EnemyManager>().health -= damage;
+            collision.gameObject.GetComponent<EnemyManager>().health -= Mathf.Clamp(damage, minDamage, maxDamage);
             Destroy(gameObject);
         }
     }

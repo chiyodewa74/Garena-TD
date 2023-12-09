@@ -11,6 +11,8 @@ public class PlayerAttack : MonoBehaviour
     private Camera mainCamera;
     private Vector3 mousePos;
     [SerializeField] bool canFire;
+    [SerializeField] float minTimeBetweenFiring = 1f;
+    [SerializeField] float maxTimeBetweenFiring = 5f;
     Animator anim;
     public bool Throwing;
     public float timeBetweenFiring;
@@ -31,7 +33,7 @@ public class PlayerAttack : MonoBehaviour
         if (!canFire)
         {
             timer += Time.deltaTime;
-            if (timer > timeBetweenFiring)
+            if (timer > Mathf.Clamp(timeBetweenFiring, minTimeBetweenFiring, maxTimeBetweenFiring))
             {
                 canFire = true;
                 timer = 0;

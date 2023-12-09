@@ -6,6 +6,8 @@ public class EnemySpawner : MonoBehaviour
 {
     [SerializeField] GameManager gm;
     [SerializeField] SuperTextMesh WaveText;
+    [SerializeField] GameObject upgradePanel;
+    [SerializeField] Transform canvas;
 
     public List<Transform> SpawnPoints;
     public List<Wave> waves;
@@ -25,7 +27,7 @@ public class EnemySpawner : MonoBehaviour
         {
             if (Time.time >= NextWave)
             {
-
+                TriggerUpgradePanel();
 
                 CurrentWave++;
                 WaveText.text = "<b>Wave</b>: " + CurrentWave;
@@ -46,6 +48,17 @@ public class EnemySpawner : MonoBehaviour
                 }
             }
         }
+    }
+
+    private void TriggerUpgradePanel()
+    {
+        Debug.Log("Upgrade panel triggered");
+        Time.timeScale = 0;
+        Instantiate(upgradePanel, Vector2.zero, Quaternion.identity).GetComponent<UpgradeButtonController>();
+        /*
+        GameObject upgrade = Instantiate(upgradePanel, Vector2.zero, Quaternion.identity);
+        upgrade.transform.SetParent(canvas);
+        */
     }
 }
 
