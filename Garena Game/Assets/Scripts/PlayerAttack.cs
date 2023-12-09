@@ -38,7 +38,7 @@ public class PlayerAttack : MonoBehaviour
             }
         }
 
-        if (Input.GetMouseButtonDown(0) && canFire)
+        if (Input.GetMouseButton(0) && canFire)
         {
             anim.SetTrigger("Throw");
 
