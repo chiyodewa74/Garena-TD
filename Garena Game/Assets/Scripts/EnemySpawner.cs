@@ -11,6 +11,7 @@ public class EnemySpawner : MonoBehaviour
     public int CurrentWave = 1;
     float NextSpawn;
     float NextWave;
+    SuperTextMesh WaveText;
 
     private void Start()
     {
@@ -25,6 +26,7 @@ public class EnemySpawner : MonoBehaviour
             if (Time.time >= NextWave)
             {
                 CurrentWave++;
+                WaveText.text = "<b>Wave</b>: " + CurrentWave;
                 NextWave = Time.time + waves[CurrentWave - 1].WaveTime;
 
                 if(CurrentWave - 1 > waves.Count)

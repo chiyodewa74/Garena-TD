@@ -46,16 +46,43 @@ public class PlayerMovementController : MonoBehaviour
 
     public void Die()
     {
+        // Get the current cell coordinates based on the object's position
+        Vector3 objectPosition = transform.position;
+        Vector2Int cellCoordinates = WorldToGridCoordinates(objectPosition);
+
+        // Spawn the object at the current cell
+        SpawnObjectAtCell(cellCoordinates);
+
         //anim.SetTrigger("Die");
 
-        if (transform.position.x < 0)
-        {
-            Instantiate(CorpesLeft, transform.position, Quaternion.identity);
-        }else
-        {
-            Instantiate(CorpesRight, transform.position, Quaternion.identity);
-        }
+        
 
         transform.position = new Vector2(-0.64f, 3.45f);
+    }
+
+    // Convert world coordinates to grid coordinates
+    private Vector2Int WorldToGridCoordinates(Vector3 worldPosition)
+    {
+        // Your logic to convert world coordinates to grid coordinates
+        // ...
+
+        // For example, you might round the coordinates to get the nearest grid cell
+        int gridX = Mathf.RoundToInt(worldPosition.x);
+        int gridY = Mathf.RoundToInt(worldPosition.y);
+
+        return new Vector2Int(gridX, gridY);
+    }
+
+    // Spawn the object at the specified grid cell
+    private void SpawnObjectAtCell(Vector2Int cellCoordinates)
+    {
+        if (transform.position.x < 0)
+        {
+            Instantiate(CorpesLeft, new Vector3(cellCoordinates.x, cellCoordinates.y, 0), Quaternion.Euler(0, 0, 45));
+        }
+        else
+        {
+            Instantiate(CorpesRight, new Vector3(cellCoordinates.x, cellCoordinates.y, 0), Quaternion.Euler(0, 0, -45));
+        }
     }
 }

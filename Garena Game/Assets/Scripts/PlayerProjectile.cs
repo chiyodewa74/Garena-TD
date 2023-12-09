@@ -43,6 +43,8 @@ public class PlayerProjectile : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+        transform.Rotate(new Vector3(0, 0, 3));
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

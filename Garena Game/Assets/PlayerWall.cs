@@ -12,6 +12,12 @@ public class PlayerWall : MonoBehaviour
         {
             TakeDamage(1);
         }
+
+        if (collision.gameObject.CompareTag("EnemyBullet"))
+        {
+            Destroy(collision.gameObject);
+            TakeDamage(1);
+        }
     }
 
     void TakeDamage(int Points)
