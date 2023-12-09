@@ -12,6 +12,16 @@ public class PlayerProjectile : MonoBehaviour
     private Camera mainCamera;
     private Rigidbody2D rb;
 
+    static Object[] spriteArray;
+
+    private void Awake()
+    {
+        if (spriteArray == null)
+        {
+            spriteArray = Resources.LoadAll("CookiesImages", typeof(Sprite));
+        }
+    }
+
     void Start()
     {
         mainCamera = Camera.main;
@@ -22,6 +32,9 @@ public class PlayerProjectile : MonoBehaviour
         rb.velocity = new Vector2(direction.x, direction.y).normalized * force;
         float rot = Mathf.Atan2(rotation.y, rotation.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0, 0, rot + 90);
+
+        int chosenSprite = Random.Range(0, spriteArray.Length);
+        this.GetComponent<SpriteRenderer>().sprite = Instantiate(spriteArray[chosenSprite]) as Sprite;
     }
 
     private void Update()

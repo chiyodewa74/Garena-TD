@@ -8,9 +8,16 @@ public class Projectile : MonoBehaviour
     Rigidbody2D rb;
     Vector2 Direction;
 
+    static Object[] spriteArray;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+
+        if (spriteArray == null)
+        {
+            spriteArray = Resources.LoadAll("CookiesImages", typeof(Sprite));
+        }
     }
 
     // Start is called before the first frame update
@@ -18,6 +25,9 @@ public class Projectile : MonoBehaviour
     {
         Transform player = FindAnyObjectByType<PlayerMovementController>().transform;
         Direction = player.position - transform.position;
+
+        int chosenSprite = Random.Range(0, spriteArray.Length);
+        this.GetComponent<SpriteRenderer>().sprite = Instantiate(spriteArray[chosenSprite]) as Sprite;
     }
 
     // Update is called once per frame
