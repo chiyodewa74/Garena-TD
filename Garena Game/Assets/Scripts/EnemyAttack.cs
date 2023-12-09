@@ -5,10 +5,19 @@ using UnityEngine;
 public class EnemyAttack : MonoBehaviour
 {
     [SerializeField] EnemyType enemyType;
+    [SerializeField] float attackRange;
     public float MinShootTime;
     public float MaxShootTime;
     public GameObject Projectile;
+    public GameObject player;
     float SelectedShootTime;
+    EnemyMovement enemyMovement;
+
+    private void Awake()
+    {
+        player = GameObject.Find("Player");
+        enemyMovement = GetComponent<EnemyMovement>();
+    }
 
     private void Start()
     {
@@ -18,13 +27,23 @@ public class EnemyAttack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(enemyType == EnemyType.Projectile)
+        if (Vector3.Distance(player.transform.position, transform.position) <= attackRange)
         {
-            if(Time.time >= SelectedShootTime)
+            if (enemyType == EnemyType.Projectile)
             {
-                SelectedShootTime = Time.time + Random.Range(MinShootTime, MaxShootTime);
-                Instantiate(Projectile, transform.position, Quaternion.identity);
+                if (Time.time >= SelectedShootTime)
+                {
+                    SelectedShootTime = Time.time + Random.Range(MinShootTime, MaxShootTime);
+                    Instantiate(Projectile, transform.position, Quaternion.identity);
+                }
             }
+            if (enemyType == EnemyType.Melee)
+            {
+                enemyMovement.target = player.transform;
+            }
+        } else
+        {
+            enemyMovement.target = GameObject.Find("Money Pile").transform;
         }
     }
 
@@ -35,6 +54,13 @@ public class EnemyAttack : MonoBehaviour
             print("Hit");
             Destroy(gameObject);
         }
+
+
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawWireSphere(transform.position, attackRange);
     }
 }
 

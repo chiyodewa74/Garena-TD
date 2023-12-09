@@ -101,9 +101,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyType: 0
+  attackRange: 500
   MinShootTime: 3
   MaxShootTime: 5
   Projectile: {fileID: 2409340216436869782, guid: 6b61472f237940244b59d66df3e8bce2, type: 3}
+  player: {fileID: 0}
 --- !u!114 &1330477083000787220
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -116,7 +118,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 099007cae3e9c2b4c82b87e3ddf5ba34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gm: {fileID: 0}
   Speed: 3
+  target: {fileID: 0}
 --- !u!50 &9143371086989459652
 Rigidbody2D:
   serializedVersion: 4
