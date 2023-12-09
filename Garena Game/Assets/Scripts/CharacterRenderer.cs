@@ -38,7 +38,6 @@ public class CharacterRenderer : MonoBehaviour
             lastDirection = DirectionToIndex(direction, 8);
         }
 
-        Debug.Log(lastDirection);
         animator.Play(directionArray[lastDirection]);
     }
 
