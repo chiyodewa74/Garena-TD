@@ -114,7 +114,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 32
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -135,7 +135,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 32
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -156,6 +156,48 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f648d845b8468c43b0511c211a27967
+      internalID: 1556815371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prefrence_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5456c40f615c2f74580b3942ea88c400
+      internalID: 1179774663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prefrence_4
+      rect:
+        serializedVersion: 2
+        x: 0
         y: 32
         width: 32
         height: 32
@@ -166,14 +208,56 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 04d12b4f5d1744c4b9a1e88f90664b8a
-      internalID: 1556815371
+      spriteID: f2a43e3a39a2ea749977ed980611085d
+      internalID: 714703670
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Prefrence_3
+      name: Prefrence_5
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fabcf8f993e5a94cbaed21d8985935e
+      internalID: 389061608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prefrence_6
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6c1cfcfa7795424d9bcd17293db7489
+      internalID: -1700004663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prefrence_7
       rect:
         serializedVersion: 2
         x: 96
@@ -187,14 +271,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 33438bcf9de999b49bde8d274ccc5af6
-      internalID: 1179774663
+      spriteID: ca26896f6357bfa418fb8c78ef7cf20d
+      internalID: 177962476
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Prefrence_4
+      name: Prefrence_8
       rect:
         serializedVersion: 2
         x: 0
@@ -208,71 +292,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9fb344bd5f52ebf40aeea1d0641679a9
-      internalID: 714703670
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Prefrence_5
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 89d3da135bbc73e4e97b235932025dba
-      internalID: 389061608
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Prefrence_6
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4920b226cfe85494ea168ab67f44871e
-      internalID: -1700004663
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Prefrence_7
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5bddf450a22eea147b8ecefd42777f07
-      internalID: 177962476
+      spriteID: 88dc11d179c52d544b8ab2c9d2bdb61e
+      internalID: -384007626
       vertices: []
       indices: 
       edges: []
@@ -296,6 +317,7 @@ TextureImporter:
       Prefrence_5: 389061608
       Prefrence_6: -1700004663
       Prefrence_7: 177962476
+      Prefrence_8: -384007626
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
