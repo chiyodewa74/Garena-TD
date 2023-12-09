@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
 {
+    public GameManager gm;
+
     public float Speed;
     Transform MoneyPile;
     Rigidbody2D rb;
@@ -25,7 +27,7 @@ public class EnemyMovement : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Objective"))
         {
-            print("Objective Hit!");
+            gm.Health -= 1;
             Destroy(gameObject);
         }
     }
