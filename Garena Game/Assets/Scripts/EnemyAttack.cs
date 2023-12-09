@@ -42,7 +42,6 @@ public class EnemyAttack : MonoBehaviour
                 }
             }
 
-
             if (enemyType == EnemyType.Melee)
             {
                 enemyMovement.target = PlayerMovementController.Instance.transform;
@@ -57,7 +56,6 @@ public class EnemyAttack : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            Debug.Log(collision.gameObject.tag);
             collision.gameObject.GetComponent<PlayerMovementController>().Die();
             Destroy(gameObject);
         }

@@ -37,8 +37,7 @@ public class Projectile : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            Debug.Log(collision.gameObject);
-            collision.gameObject.GetComponent<PlayerMovementController>().Die();
+            collision.gameObject.GetComponent<PlayerMovementController>().playerHealth -= 1;
             Destroy(gameObject);
         }
     }

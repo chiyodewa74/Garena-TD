@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     public bool winGame;
     public bool isStunned;
     public float stunTime;
+    public float waveOver;
 
     private void Awake()
     {
@@ -37,7 +38,6 @@ public class GameManager : MonoBehaviour
         {
             winPanel.SetActive(true);
             winGame = true;
-            Debug.Log("Win!");
         }
     }
 }

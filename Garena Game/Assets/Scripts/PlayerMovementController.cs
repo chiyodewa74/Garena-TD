@@ -14,6 +14,7 @@ public class PlayerMovementController : MonoBehaviour
     PlayerAttack playerAttack;
     public float horizontalInput;
     public float verticalInput;
+    public int playerHealth;
 
     Rigidbody2D rb;
 
@@ -44,6 +45,11 @@ public class PlayerMovementController : MonoBehaviour
         {
             charaRenderer.SetDirection(movement);
         }
+
+        if (playerHealth <= 0)
+        {
+            Die();
+        }
     }
 
     public void Die()
@@ -57,7 +63,7 @@ public class PlayerMovementController : MonoBehaviour
 
         //anim.SetTrigger("Die");
 
-        transform.position = new Vector2(-0.64f, 3.45f);
+        transform.position = new Vector2(-0.28f, 0.48f);
 
         StartCoroutine(EnemyStunned(gm.stunTime));
     }
