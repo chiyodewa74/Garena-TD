@@ -52,6 +52,7 @@ public class PlayerAttack : MonoBehaviour
                 anim.SetInteger("X", 1);
             }
 
+            canFire = false;
             Throwing = true;
         }
     }
