@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerAttack : MonoBehaviour
 {
@@ -9,7 +10,6 @@ public class PlayerAttack : MonoBehaviour
     public GameObject playerProjectile;
 
     private Camera mainCamera;
-    private Vector3 mousePos;
     [SerializeField] bool canFire;
     [SerializeField] float minTimeBetweenFiring = 1f;
     [SerializeField] float maxTimeBetweenFiring = 5f;
@@ -18,6 +18,7 @@ public class PlayerAttack : MonoBehaviour
     public float timeBetweenFiring;
     public Transform ThrowPoint;
     PlayerMovementController playerMovement;
+    public Slider Reload;
 
     private void Start()
     {
@@ -28,12 +29,13 @@ public class PlayerAttack : MonoBehaviour
 
     private void Update()
     {
-        mousePos = mainCamera.ScreenToWorldPoint(Input.mousePosition);
-
         if (!canFire)
         {
             timer += Time.deltaTime;
-            if (timer > Mathf.Clamp(timeBetweenFiring, minTimeBetweenFiring, maxTimeBetweenFiring))
+            Reload.value += Time.deltaTime;
+            Reload.maxValue = Mathf.Clamp(timeBetweenFiring, minTimeBetweenFiring, maxTimeBetweenFiring);
+
+            if (timer >= Mathf.Clamp(timeBetweenFiring, minTimeBetweenFiring, maxTimeBetweenFiring))
             {
                 canFire = true;
                 timer = 0;
@@ -43,6 +45,7 @@ public class PlayerAttack : MonoBehaviour
         if (Input.GetMouseButton(0) && canFire)
         {
             anim.SetTrigger("Throw");
+            Reload.value = 0;
 
             if (playerMovement.horizontalInput != 0)
             {

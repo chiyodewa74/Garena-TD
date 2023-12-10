@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class IntroMenuManager : MonoBehaviour
 {
+    public Animator Reload;
     Cursor cursor;
     Animator anim;
 
@@ -31,6 +32,8 @@ public class IntroMenuManager : MonoBehaviour
             FindObjectOfType<EnemySpawner>().enabled = true;
             FindObjectOfType<PlayerMovementController>().enabled = true;
             GameObject.Find("WaveText").GetComponent<Animator>().SetTrigger("In");
+            GameObject.Find("Tower").GetComponent<Animator>().SetTrigger("In");
+            Reload.SetTrigger("In");
             this.enabled = false;
             cursor.gameObject.SetActive(true);
             Destroy(gameObject, 1);

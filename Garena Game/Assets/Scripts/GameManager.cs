@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
     public bool isStunned;
     public float stunTime;
     public float waveOver;
+    bool CanRestart;
 
     private void Awake()
     {
@@ -24,11 +25,8 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        if (Health <= 0)
+        if(CanRestart)
         {
-            loseGame = false;
-            Time.timeScale = 0;
-            losePanel.SetActive(true);
             if (Input.GetKeyDown(KeyCode.R))
             {
                 Time.timeScale = 1;
@@ -47,5 +45,20 @@ public class GameManager : MonoBehaviour
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             }
         }
+    }
+
+    public void TakeDamage(int damage)
+    {
+        Health -= damage;
+
+        if (Health <= 0)
+        {
+            loseGame = false;
+            Time.timeScale = 0;
+            losePanel.SetActive(true);
+            CanRestart = true;
+        }
+
+        FindObjectOfType<ObjectiveManager>().TakeDamage();
     }
 }

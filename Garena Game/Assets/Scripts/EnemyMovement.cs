@@ -37,7 +37,7 @@ public class EnemyMovement : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Objective"))
         {
-            gm.Health -= 1;
+            gm.TakeDamage(1);
             Destroy(gameObject);
         }
     }
