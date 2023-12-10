@@ -38,5 +38,10 @@ public class IntroMenuManager : MonoBehaviour
             cursor.gameObject.SetActive(true);
             Destroy(gameObject, 1);
         }
+
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
     }
 }
