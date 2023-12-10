@@ -38,10 +38,7 @@ public class PlayerProjectile : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            if (Random.Range(1, 3) == 2)
-            {
                 AudioManager.Instance.PlaySound("Hit", 0.7f, Random.Range(0.9f, 1.1f), false);
-            }
             collision.gameObject.GetComponent<EnemyManager>().TakeDamage(damage);
             Destroy(gameObject);
         }

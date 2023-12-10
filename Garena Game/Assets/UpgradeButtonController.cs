@@ -4,15 +4,12 @@ using UnityEngine;
 
 public class UpgradeButtonController : MonoBehaviour
 {
-    [SerializeField] PlayerProjectile playerProjectile;
-    [SerializeField] PlayerMovementController playerCont;
-    [SerializeField] PlayerWall playerWallLeft;
-    [SerializeField] PlayerWall playerWallRight;
     [SerializeField] PlayerAttack playerAttack;
+    [SerializeField] PlayerMovementController playerCont;
 
     public void DamageUpgradeButtonPressed()
     {
-        playerProjectile.damage += 1;
+        playerAttack.ProjectileDamage += 1;
 
         gameObject.SetActive(false);
         Time.timeScale = 1;
@@ -21,9 +18,6 @@ public class UpgradeButtonController : MonoBehaviour
     public void HealthUpgradeButtonPressed()
     {
         playerCont.initialPlayerHealth += 2;
-
-        playerWallLeft.Health += 2;
-        playerWallRight.Health += 2;
 
         gameObject.SetActive(false);
         Time.timeScale = 1;

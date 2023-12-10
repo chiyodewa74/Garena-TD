@@ -7,6 +7,7 @@ public class PlayerAttack : MonoBehaviour
 {
     // [SerializeField] private LayerMask groundMask;
     [SerializeField] float timer;
+    public int ProjectileDamage;
     public GameObject playerProjectile;
 
     private Camera mainCamera;
@@ -44,6 +45,8 @@ public class PlayerAttack : MonoBehaviour
 
         if (Input.GetMouseButton(0) && canFire)
         {
+            GameObject.Find("Virtual Camera").GetComponent<Animator>().SetTrigger("Shake");
+            AudioManager.Instance.PlaySound("Throw", 1, Random.Range(0.9f, 1.1f), false);
             anim.SetTrigger("Throw");
             Reload.value = 0;
 
@@ -63,6 +66,7 @@ public class PlayerAttack : MonoBehaviour
     public void ThrowProjectile()
     {
         Throwing = false;
-        Instantiate(playerProjectile, ThrowPoint.position, Quaternion.identity);
+        GameObject GO = Instantiate(playerProjectile, ThrowPoint.position, Quaternion.identity);
+        GO.GetComponent<PlayerProjectile>().damage = ProjectileDamage;
     }
 }

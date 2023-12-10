@@ -59,10 +59,7 @@ public class PlayerMovementController : MonoBehaviour
         mat.EnableKeyword("HITEFFECT_ON");
 
         Invoke("ResetHighlight", 0.1f);
-        if (Random.Range(1, 3) == 2)
-        {
             AudioManager.Instance.PlaySound("grunt" + Random.Range(0, 6), 1, 1, false);
-        }
     }
 
     void ResetHighlight()
@@ -108,14 +105,17 @@ public class PlayerMovementController : MonoBehaviour
     // Spawn the object at the specified grid cell
     private void SpawnObjectAtCell(Vector2Int cellCoordinates)
     {
+        GameObject GO;
         if (transform.position.x < 0)
         {
-            Instantiate(CorpesLeft, new Vector3(cellCoordinates.x, cellCoordinates.y, 0), Quaternion.identity);
+            GO = Instantiate(CorpesLeft, new Vector3(cellCoordinates.x, cellCoordinates.y, 0), Quaternion.identity);
         }
         else
         {
-            Instantiate(CorpesRight, new Vector3(cellCoordinates.x, cellCoordinates.y, 0), Quaternion.identity);
+            GO = Instantiate(CorpesRight, new Vector3(cellCoordinates.x, cellCoordinates.y, 0), Quaternion.identity);
         }
+
+        GO.GetComponent<PlayerWall>().Health = initialPlayerHealth;
     }
 
     private IEnumerator EnemyStunned(float stunTime)

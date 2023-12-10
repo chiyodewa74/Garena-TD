@@ -29,7 +29,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 368830228208158769}
   m_Father: {fileID: 4119134970711240860}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -100,12 +101,12 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3257200379114177438}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalScale: {x: 0.33333334, y: 0.33333334, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 4119134970711240860}
+  m_Father: {fileID: 5934697370198341517}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -475,7 +476,7 @@ MonoBehaviour:
   showEventFoldout: 0
   showBetaFoldout: 0
   info:
-  - pos: {x: -59.5, y: 1, z: 0}
+  - pos: {x: -56, y: 1, z: 0}
     offset: {x: 0, y: 0, z: 0}
     lineSpacing: 1
     isEndOfParagraph: 0
@@ -512,10 +513,10 @@ MonoBehaviour:
     soundClipData: {fileID: 0}
     IdxIdentifier: 0
     InfoInUse: 0
-    chSize: 14
+    chSize: 4
     submeshChange: 0
     invoked: 1
-  - pos: {x: -50.5, y: 1, z: 0}
+  - pos: {x: -49, y: 1, z: 0}
     offset: {x: 0, y: 0, z: 0}
     lineSpacing: 1
     isEndOfParagraph: 0
@@ -552,10 +553,10 @@ MonoBehaviour:
     soundClipData: {fileID: 0}
     IdxIdentifier: 0
     InfoInUse: 0
-    chSize: 14
+    chSize: 4
     submeshChange: 0
     invoked: 1
-  - pos: {x: -47.5, y: 1, z: 0}
+  - pos: {x: -45.5, y: 1, z: 0}
     offset: {x: 0, y: 0, z: 0}
     lineSpacing: 1
     isEndOfParagraph: 0
@@ -592,10 +593,10 @@ MonoBehaviour:
     soundClipData: {fileID: 0}
     IdxIdentifier: 0
     InfoInUse: 0
-    chSize: 14
+    chSize: 4
     submeshChange: 0
     invoked: 1
-  - pos: {x: -42.5, y: 1, z: 0}
+  - pos: {x: -42, y: 1, z: 0}
     offset: {x: 0, y: 0, z: 0}
     lineSpacing: 1
     isEndOfParagraph: 0
@@ -632,10 +633,10 @@ MonoBehaviour:
     soundClipData: {fileID: 0}
     IdxIdentifier: 0
     InfoInUse: 0
-    chSize: 14
+    chSize: 4
     submeshChange: 0
     invoked: 1
-  - pos: {x: -34.5, y: 1, z: 0}
+  - pos: {x: -35, y: 1, z: 0}
     offset: {x: 0, y: 0, z: 0}
     lineSpacing: 1
     isEndOfParagraph: 0
@@ -672,10 +673,10 @@ MonoBehaviour:
     soundClipData: {fileID: 0}
     IdxIdentifier: 0
     InfoInUse: 0
-    chSize: 14
+    chSize: 4
     submeshChange: 0
     invoked: 1
-  - pos: {x: -30.5, y: 1, z: 0}
+  - pos: {x: -31.5, y: 1, z: 0}
     offset: {x: 0, y: 0, z: 0}
     lineSpacing: 1
     isEndOfParagraph: 0
@@ -712,10 +713,10 @@ MonoBehaviour:
     soundClipData: {fileID: 0}
     IdxIdentifier: 0
     InfoInUse: 0
-    chSize: 14
+    chSize: 4
     submeshChange: 0
     invoked: 1
-  - pos: {x: -20.5, y: 1, z: 0}
+  - pos: {x: -21, y: 1, z: 0}
     offset: {x: 0, y: 0, z: 0}
     lineSpacing: 1
     isEndOfParagraph: 0
@@ -752,10 +753,10 @@ MonoBehaviour:
     soundClipData: {fileID: 0}
     IdxIdentifier: 0
     InfoInUse: 0
-    chSize: 14
+    chSize: 4
     submeshChange: 0
     invoked: 1
-  - pos: {x: -12.5, y: 1, z: 0}
+  - pos: {x: -14, y: 1, z: 0}
     offset: {x: 0, y: 0, z: 0}
     lineSpacing: 1
     isEndOfParagraph: 0
@@ -792,10 +793,10 @@ MonoBehaviour:
     soundClipData: {fileID: 0}
     IdxIdentifier: 0
     InfoInUse: 0
-    chSize: 14
+    chSize: 4
     submeshChange: 0
     invoked: 1
-  - pos: {x: -8.5, y: 1, z: 0}
+  - pos: {x: -10.5, y: 1, z: 0}
     offset: {x: 0, y: 0, z: 0}
     lineSpacing: 1
     isEndOfParagraph: 0
@@ -832,10 +833,10 @@ MonoBehaviour:
     soundClipData: {fileID: 0}
     IdxIdentifier: 0
     InfoInUse: 0
-    chSize: 14
+    chSize: 4
     submeshChange: 0
     invoked: 1
-  - pos: {x: -0.5, y: 1, z: 0}
+  - pos: {x: -3.5, y: 1, z: 0}
     offset: {x: 0, y: 0, z: 0}
     lineSpacing: 1
     isEndOfParagraph: 0
@@ -872,10 +873,10 @@ MonoBehaviour:
     soundClipData: {fileID: 0}
     IdxIdentifier: 0
     InfoInUse: 0
-    chSize: 14
+    chSize: 4
     submeshChange: 0
     invoked: 1
-  - pos: {x: 3.5, y: 1, z: 0}
+  - pos: {x: 0, y: 1, z: 0}
     offset: {x: 0, y: 0, z: 0}
     lineSpacing: 1
     isEndOfParagraph: 0
@@ -912,10 +913,10 @@ MonoBehaviour:
     soundClipData: {fileID: 0}
     IdxIdentifier: 0
     InfoInUse: 0
-    chSize: 14
+    chSize: 4
     submeshChange: 0
     invoked: 1
-  - pos: {x: 13.5, y: 1, z: 0}
+  - pos: {x: 10.5, y: 1, z: 0}
     offset: {x: 0, y: 0, z: 0}
     lineSpacing: 1
     isEndOfParagraph: 0
@@ -952,10 +953,10 @@ MonoBehaviour:
     soundClipData: {fileID: 0}
     IdxIdentifier: 0
     InfoInUse: 0
-    chSize: 14
+    chSize: 4
     submeshChange: 0
     invoked: 1
-  - pos: {x: 21.5, y: 1, z: 0}
+  - pos: {x: 17.5, y: 1, z: 0}
     offset: {x: 0, y: 0, z: 0}
     lineSpacing: 1
     isEndOfParagraph: 0
@@ -992,10 +993,10 @@ MonoBehaviour:
     soundClipData: {fileID: 0}
     IdxIdentifier: 0
     InfoInUse: 0
-    chSize: 14
+    chSize: 4
     submeshChange: 0
     invoked: 1
-  - pos: {x: 29.5, y: 1, z: 0}
+  - pos: {x: 24.5, y: 1, z: 0}
     offset: {x: 0, y: 0, z: 0}
     lineSpacing: 1
     isEndOfParagraph: 0
@@ -1032,10 +1033,10 @@ MonoBehaviour:
     soundClipData: {fileID: 0}
     IdxIdentifier: 0
     InfoInUse: 0
-    chSize: 14
+    chSize: 4
     submeshChange: 0
     invoked: 1
-  - pos: {x: 34.5, y: 1, z: 0}
+  - pos: {x: 28, y: 1, z: 0}
     offset: {x: 0, y: 0, z: 0}
     lineSpacing: 1
     isEndOfParagraph: 0
@@ -1072,10 +1073,10 @@ MonoBehaviour:
     soundClipData: {fileID: 0}
     IdxIdentifier: 0
     InfoInUse: 0
-    chSize: 14
+    chSize: 4
     submeshChange: 0
     invoked: 1
-  - pos: {x: 42.5, y: 1, z: 0}
+  - pos: {x: 35, y: 1, z: 0}
     offset: {x: 0, y: 0, z: 0}
     lineSpacing: 1
     isEndOfParagraph: 0
@@ -1112,10 +1113,10 @@ MonoBehaviour:
     soundClipData: {fileID: 0}
     IdxIdentifier: 0
     InfoInUse: 0
-    chSize: 14
+    chSize: 4
     submeshChange: 0
     invoked: 1
-  - pos: {x: 50.5, y: 1, z: 0}
+  - pos: {x: 42, y: 1, z: 0}
     offset: {x: 0, y: 0, z: 0}
     lineSpacing: 1
     isEndOfParagraph: 0
@@ -1152,7 +1153,7 @@ MonoBehaviour:
     soundClipData: {fileID: 0}
     IdxIdentifier: 0
     InfoInUse: 0
-    chSize: 14
+    chSize: 4
     submeshChange: 0
     invoked: 1
   lineHeights:
@@ -1189,7 +1190,7 @@ MonoBehaviour:
   unreading: 0
   size: 14
   bestFitMulti: 1
-  quality: 14
+  quality: 4
   filterMode: 1
   maskMode: 0
   style: 0
@@ -1212,23 +1213,23 @@ MonoBehaviour:
   textMesh: {fileID: 0}
   rawTopLeftBounds: {x: 80, y: -15, z: 0}
   rawBottomRightBounds: {x: -80, y: 15, z: 0}
-  rawBottomRightTextBounds: {x: 119, y: -14, z: 0}
-  topLeftBounds: {x: 675.25, y: 130.25, z: 0}
-  topRightBounds: {x: 835.25, y: 130.25, z: 0}
-  bottomLeftBounds: {x: 675.25, y: 100.25, z: 0}
-  bottomRightBounds: {x: 835.25, y: 100.25, z: 0}
-  centerBounds: {x: 755.25, y: 115.25, z: 0}
-  topLeftTextBounds: {x: 695.75, y: 122.25, z: 0}
-  topRightTextBounds: {x: 814.75, y: 122.25, z: 0}
-  bottomLeftTextBounds: {x: 695.75, y: 108.25, z: 0}
-  bottomRightTextBounds: {x: 814.75, y: 108.25, z: 0}
-  centerTextBounds: {x: 755.25, y: 115.25, z: 0}
-  finalTopLeftTextBounds: {x: 695.75, y: 122.25, z: 0}
-  finalTopRightTextBounds: {x: 814.75, y: 122.25, z: 0}
-  finalBottomLeftTextBounds: {x: 695.75, y: 108.25, z: 0}
-  finalBottomRightTextBounds: {x: 814.75, y: 108.25, z: 0}
-  finalCenterTextBounds: {x: 755.25, y: 115.25, z: 0}
-  unwrappedBottomRightTextBounds: {x: 118, y: -14, z: 0}
+  rawBottomRightTextBounds: {x: 112, y: -14, z: 0}
+  topLeftBounds: {x: 266.1146, y: 100.69324, z: 0}
+  topRightBounds: {x: 302.1979, y: 100.69324, z: 0}
+  bottomLeftBounds: {x: 266.1146, y: 93.92761, z: 0}
+  bottomRightBounds: {x: 302.1979, y: 93.92761, z: 0}
+  centerBounds: {x: 284.15625, y: 97.310425, z: 0}
+  topLeftTextBounds: {x: 271.5271, y: 98.88907, z: 0}
+  topRightTextBounds: {x: 296.7854, y: 98.88907, z: 0}
+  bottomLeftTextBounds: {x: 271.5271, y: 95.73177, z: 0}
+  bottomRightTextBounds: {x: 296.7854, y: 95.73177, z: 0}
+  centerTextBounds: {x: 284.15625, y: 97.310425, z: 0}
+  finalTopLeftTextBounds: {x: 271.5271, y: 98.88907, z: 0}
+  finalTopRightTextBounds: {x: 296.7854, y: 98.88907, z: 0}
+  finalBottomLeftTextBounds: {x: 271.5271, y: 95.73177, z: 0}
+  finalBottomRightTextBounds: {x: 296.7854, y: 95.73177, z: 0}
+  finalCenterTextBounds: {x: 284.15625, y: 97.310425, z: 0}
+  unwrappedBottomRightTextBounds: {x: 105, y: -14, z: 0}
   onCompleteEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -1302,7 +1303,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 6185746888291496358}
   m_Father: {fileID: 4119134970711240860}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -1407,7 +1409,7 @@ MonoBehaviour:
   showEventFoldout: 0
   showBetaFoldout: 0
   info:
-  - pos: {x: -57, y: 1, z: 0}
+  - pos: {x: -54.25, y: 1, z: 0}
     offset: {x: 0, y: 0, z: 0}
     lineSpacing: 1
     isEndOfParagraph: 0
@@ -1444,10 +1446,10 @@ MonoBehaviour:
     soundClipData: {fileID: 0}
     IdxIdentifier: 0
     InfoInUse: 0
-    chSize: 14
+    chSize: 4
     submeshChange: 0
     invoked: 1
-  - pos: {x: -47, y: 1, z: 0}
+  - pos: {x: -43.75, y: 1, z: 0}
     offset: {x: 0, y: 0, z: 0}
     lineSpacing: 1
     isEndOfParagraph: 0
@@ -1484,10 +1486,10 @@ MonoBehaviour:
     soundClipData: {fileID: 0}
     IdxIdentifier: 0
     InfoInUse: 0
-    chSize: 14
+    chSize: 4
     submeshChange: 0
     invoked: 1
-  - pos: {x: -39, y: 1, z: 0}
+  - pos: {x: -36.75, y: 1, z: 0}
     offset: {x: 0, y: 0, z: 0}
     lineSpacing: 1
     isEndOfParagraph: 0
@@ -1524,10 +1526,10 @@ MonoBehaviour:
     soundClipData: {fileID: 0}
     IdxIdentifier: 0
     InfoInUse: 0
-    chSize: 14
+    chSize: 4
     submeshChange: 0
     invoked: 1
-  - pos: {x: -27, y: 1, z: 0}
+  - pos: {x: -26.25, y: 1, z: 0}
     offset: {x: 0, y: 0, z: 0}
     lineSpacing: 1
     isEndOfParagraph: 0
@@ -1564,10 +1566,10 @@ MonoBehaviour:
     soundClipData: {fileID: 0}
     IdxIdentifier: 0
     InfoInUse: 0
-    chSize: 14
+    chSize: 4
     submeshChange: 0
     invoked: 1
-  - pos: {x: -19, y: 1, z: 0}
+  - pos: {x: -19.25, y: 1, z: 0}
     offset: {x: 0, y: 0, z: 0}
     lineSpacing: 1
     isEndOfParagraph: 0
@@ -1604,10 +1606,10 @@ MonoBehaviour:
     soundClipData: {fileID: 0}
     IdxIdentifier: 0
     InfoInUse: 0
-    chSize: 14
+    chSize: 4
     submeshChange: 0
     invoked: 1
-  - pos: {x: -11, y: 1, z: 0}
+  - pos: {x: -12.25, y: 1, z: 0}
     offset: {x: 0, y: 0, z: 0}
     lineSpacing: 1
     isEndOfParagraph: 0
@@ -1644,10 +1646,10 @@ MonoBehaviour:
     soundClipData: {fileID: 0}
     IdxIdentifier: 0
     InfoInUse: 0
-    chSize: 14
+    chSize: 4
     submeshChange: 0
     invoked: 1
-  - pos: {x: -3, y: 1, z: 0}
+  - pos: {x: -5.25, y: 1, z: 0}
     offset: {x: 0, y: 0, z: 0}
     lineSpacing: 1
     isEndOfParagraph: 0
@@ -1684,10 +1686,10 @@ MonoBehaviour:
     soundClipData: {fileID: 0}
     IdxIdentifier: 0
     InfoInUse: 0
-    chSize: 14
+    chSize: 4
     submeshChange: 0
     invoked: 1
-  - pos: {x: 1, y: 1, z: 0}
+  - pos: {x: -1.75, y: 1, z: 0}
     offset: {x: 0, y: 0, z: 0}
     lineSpacing: 1
     isEndOfParagraph: 0
@@ -1724,10 +1726,10 @@ MonoBehaviour:
     soundClipData: {fileID: 0}
     IdxIdentifier: 0
     InfoInUse: 0
-    chSize: 14
+    chSize: 4
     submeshChange: 0
     invoked: 1
-  - pos: {x: 11, y: 1, z: 0}
+  - pos: {x: 8.75, y: 1, z: 0}
     offset: {x: 0, y: 0, z: 0}
     lineSpacing: 1
     isEndOfParagraph: 0
@@ -1764,10 +1766,10 @@ MonoBehaviour:
     soundClipData: {fileID: 0}
     IdxIdentifier: 0
     InfoInUse: 0
-    chSize: 14
+    chSize: 4
     submeshChange: 0
     invoked: 1
-  - pos: {x: 19, y: 1, z: 0}
+  - pos: {x: 15.75, y: 1, z: 0}
     offset: {x: 0, y: 0, z: 0}
     lineSpacing: 1
     isEndOfParagraph: 0
@@ -1804,10 +1806,10 @@ MonoBehaviour:
     soundClipData: {fileID: 0}
     IdxIdentifier: 0
     InfoInUse: 0
-    chSize: 14
+    chSize: 4
     submeshChange: 0
     invoked: 1
-  - pos: {x: 27, y: 1, z: 0}
+  - pos: {x: 22.75, y: 1, z: 0}
     offset: {x: 0, y: 0, z: 0}
     lineSpacing: 1
     isEndOfParagraph: 0
@@ -1844,10 +1846,10 @@ MonoBehaviour:
     soundClipData: {fileID: 0}
     IdxIdentifier: 0
     InfoInUse: 0
-    chSize: 14
+    chSize: 4
     submeshChange: 0
     invoked: 1
-  - pos: {x: 32, y: 1, z: 0}
+  - pos: {x: 26.25, y: 1, z: 0}
     offset: {x: 0, y: 0, z: 0}
     lineSpacing: 1
     isEndOfParagraph: 0
@@ -1884,10 +1886,10 @@ MonoBehaviour:
     soundClipData: {fileID: 0}
     IdxIdentifier: 0
     InfoInUse: 0
-    chSize: 14
+    chSize: 4
     submeshChange: 0
     invoked: 1
-  - pos: {x: 40, y: 1, z: 0}
+  - pos: {x: 33.25, y: 1, z: 0}
     offset: {x: 0, y: 0, z: 0}
     lineSpacing: 1
     isEndOfParagraph: 0
@@ -1924,10 +1926,10 @@ MonoBehaviour:
     soundClipData: {fileID: 0}
     IdxIdentifier: 0
     InfoInUse: 0
-    chSize: 14
+    chSize: 4
     submeshChange: 0
     invoked: 1
-  - pos: {x: 48, y: 1, z: 0}
+  - pos: {x: 40.25, y: 1, z: 0}
     offset: {x: 0, y: 0, z: 0}
     lineSpacing: 1
     isEndOfParagraph: 0
@@ -1964,7 +1966,7 @@ MonoBehaviour:
     soundClipData: {fileID: 0}
     IdxIdentifier: 0
     InfoInUse: 0
-    chSize: 14
+    chSize: 4
     submeshChange: 0
     invoked: 1
   lineHeights:
@@ -2001,7 +2003,7 @@ MonoBehaviour:
   unreading: 0
   size: 14
   bestFitMulti: 1
-  quality: 14
+  quality: 4
   filterMode: 1
   maskMode: 0
   style: 0
@@ -2024,23 +2026,23 @@ MonoBehaviour:
   textMesh: {fileID: 0}
   rawTopLeftBounds: {x: 80, y: -15, z: 0}
   rawBottomRightBounds: {x: -80, y: 15, z: 0}
-  rawBottomRightTextBounds: {x: 114, y: -14, z: 0}
-  topLeftBounds: {x: 75.25, y: 130.25, z: 0}
-  topRightBounds: {x: 235.25, y: 130.25, z: 0}
-  bottomLeftBounds: {x: 75.25, y: 100.25, z: 0}
-  bottomRightBounds: {x: 235.25, y: 100.25, z: 0}
-  centerBounds: {x: 155.25, y: 115.25, z: 0}
-  topLeftTextBounds: {x: 98.25, y: 122.25, z: 0}
-  topRightTextBounds: {x: 212.25, y: 122.25, z: 0}
-  bottomLeftTextBounds: {x: 98.25, y: 108.25, z: 0}
-  bottomRightTextBounds: {x: 212.25, y: 108.25, z: 0}
-  centerTextBounds: {x: 155.25, y: 115.25, z: 0}
-  finalTopLeftTextBounds: {x: 98.25, y: 122.25, z: 0}
-  finalTopRightTextBounds: {x: 212.25, y: 122.25, z: 0}
-  finalBottomLeftTextBounds: {x: 98.25, y: 108.25, z: 0}
-  finalBottomRightTextBounds: {x: 212.25, y: 108.25, z: 0}
-  finalCenterTextBounds: {x: 155.25, y: 115.25, z: 0}
-  unwrappedBottomRightTextBounds: {x: 113, y: -14, z: 0}
+  rawBottomRightTextBounds: {x: 108.5, y: -14, z: 0}
+  topLeftBounds: {x: 130.8021, y: 100.69324, z: 0}
+  topRightBounds: {x: 166.88542, y: 100.69324, z: 0}
+  bottomLeftBounds: {x: 130.8021, y: 93.92761, z: 0}
+  bottomRightBounds: {x: 166.88542, y: 93.92761, z: 0}
+  centerBounds: {x: 148.84375, y: 97.310425, z: 0}
+  topLeftTextBounds: {x: 136.60925, y: 98.88907, z: 0}
+  topRightTextBounds: {x: 161.07825, y: 98.88907, z: 0}
+  bottomLeftTextBounds: {x: 136.60925, y: 95.73177, z: 0}
+  bottomRightTextBounds: {x: 161.07825, y: 95.73177, z: 0}
+  centerTextBounds: {x: 148.84375, y: 97.310425, z: 0}
+  finalTopLeftTextBounds: {x: 136.60925, y: 98.88907, z: 0}
+  finalTopRightTextBounds: {x: 161.07825, y: 98.88907, z: 0}
+  finalBottomLeftTextBounds: {x: 136.60925, y: 95.73177, z: 0}
+  finalBottomRightTextBounds: {x: 161.07825, y: 95.73177, z: 0}
+  finalCenterTextBounds: {x: 148.84375, y: 97.310425, z: 0}
+  unwrappedBottomRightTextBounds: {x: 101.5, y: -14, z: 0}
   onCompleteEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -2130,11 +2132,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de66413e7db95e3429218d99afcc2f65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerProjectile: {fileID: -1786321532114795395, guid: 235ef217869724f4ab5d63113a23f8c6, type: 3}
-  playerCont: {fileID: 4772062997366877963, guid: 5879dbe934b62cd4f9674ca69ddd4464, type: 3}
-  playerWallLeft: {fileID: 6130959775234366921, guid: 50b2243dbc0a76c40858628230ee9e3d, type: 3}
-  playerWallRight: {fileID: 1282491848927788765, guid: b331985580490544ca120b4c28a26928, type: 3}
-  playerAttack: {fileID: 5622535145022596178, guid: 5879dbe934b62cd4f9674ca69ddd4464, type: 3}
+  playerProjectile: {fileID: 0}
+  playerCont: {fileID: 0}
+  playerWallLeft: {fileID: 0}
+  playerWallRight: {fileID: 0}
+  playerAttack: {fileID: 0}
 --- !u!1 &6981406923254520731
 GameObject:
   m_ObjectHideFlags: 0
@@ -2194,7 +2196,7 @@ MonoBehaviour:
   showEventFoldout: 0
   showBetaFoldout: 0
   info:
-  - pos: {x: -50.5, y: 1, z: 0}
+  - pos: {x: -49, y: 1, z: 0}
     offset: {x: 0, y: 0, z: 0}
     lineSpacing: 1
     isEndOfParagraph: 0
@@ -2231,10 +2233,10 @@ MonoBehaviour:
     soundClipData: {fileID: 0}
     IdxIdentifier: 0
     InfoInUse: 0
-    chSize: 14
+    chSize: 4
     submeshChange: 0
     invoked: 1
-  - pos: {x: -40.5, y: 1, z: 0}
+  - pos: {x: -38.5, y: 1, z: 0}
     offset: {x: 0, y: 0, z: 0}
     lineSpacing: 1
     isEndOfParagraph: 0
@@ -2271,10 +2273,10 @@ MonoBehaviour:
     soundClipData: {fileID: 0}
     IdxIdentifier: 0
     InfoInUse: 0
-    chSize: 14
+    chSize: 4
     submeshChange: 0
     invoked: 1
-  - pos: {x: -32.5, y: 1, z: 0}
+  - pos: {x: -31.5, y: 1, z: 0}
     offset: {x: 0, y: 0, z: 0}
     lineSpacing: 1
     isEndOfParagraph: 0
@@ -2311,7 +2313,7 @@ MonoBehaviour:
     soundClipData: {fileID: 0}
     IdxIdentifier: 0
     InfoInUse: 0
-    chSize: 14
+    chSize: 4
     submeshChange: 0
     invoked: 1
   - pos: {x: -24.5, y: 1, z: 0}
@@ -2351,10 +2353,10 @@ MonoBehaviour:
     soundClipData: {fileID: 0}
     IdxIdentifier: 0
     InfoInUse: 0
-    chSize: 14
+    chSize: 4
     submeshChange: 0
     invoked: 1
-  - pos: {x: -21.5, y: 1, z: 0}
+  - pos: {x: -21, y: 1, z: 0}
     offset: {x: 0, y: 0, z: 0}
     lineSpacing: 1
     isEndOfParagraph: 0
@@ -2391,7 +2393,7 @@ MonoBehaviour:
     soundClipData: {fileID: 0}
     IdxIdentifier: 0
     InfoInUse: 0
-    chSize: 14
+    chSize: 4
     submeshChange: 0
     invoked: 1
   - pos: {x: -17.5, y: 1, z: 0}
@@ -2431,10 +2433,10 @@ MonoBehaviour:
     soundClipData: {fileID: 0}
     IdxIdentifier: 0
     InfoInUse: 0
-    chSize: 14
+    chSize: 4
     submeshChange: 0
     invoked: 1
-  - pos: {x: -9.5, y: 1, z: 0}
+  - pos: {x: -10.5, y: 1, z: 0}
     offset: {x: 0, y: 0, z: 0}
     lineSpacing: 1
     isEndOfParagraph: 0
@@ -2471,10 +2473,10 @@ MonoBehaviour:
     soundClipData: {fileID: 0}
     IdxIdentifier: 0
     InfoInUse: 0
-    chSize: 14
+    chSize: 4
     submeshChange: 0
     invoked: 1
-  - pos: {x: -5.5, y: 1, z: 0}
+  - pos: {x: -7, y: 1, z: 0}
     offset: {x: 0, y: 0, z: 0}
     lineSpacing: 1
     isEndOfParagraph: 0
@@ -2511,10 +2513,10 @@ MonoBehaviour:
     soundClipData: {fileID: 0}
     IdxIdentifier: 0
     InfoInUse: 0
-    chSize: 14
+    chSize: 4
     submeshChange: 0
     invoked: 1
-  - pos: {x: 4.5, y: 1, z: 0}
+  - pos: {x: 3.5, y: 1, z: 0}
     offset: {x: 0, y: 0, z: 0}
     lineSpacing: 1
     isEndOfParagraph: 0
@@ -2551,10 +2553,10 @@ MonoBehaviour:
     soundClipData: {fileID: 0}
     IdxIdentifier: 0
     InfoInUse: 0
-    chSize: 14
+    chSize: 4
     submeshChange: 0
     invoked: 1
-  - pos: {x: 12.5, y: 1, z: 0}
+  - pos: {x: 10.5, y: 1, z: 0}
     offset: {x: 0, y: 0, z: 0}
     lineSpacing: 1
     isEndOfParagraph: 0
@@ -2591,10 +2593,10 @@ MonoBehaviour:
     soundClipData: {fileID: 0}
     IdxIdentifier: 0
     InfoInUse: 0
-    chSize: 14
+    chSize: 4
     submeshChange: 0
     invoked: 1
-  - pos: {x: 20.5, y: 1, z: 0}
+  - pos: {x: 17.5, y: 1, z: 0}
     offset: {x: 0, y: 0, z: 0}
     lineSpacing: 1
     isEndOfParagraph: 0
@@ -2631,10 +2633,10 @@ MonoBehaviour:
     soundClipData: {fileID: 0}
     IdxIdentifier: 0
     InfoInUse: 0
-    chSize: 14
+    chSize: 4
     submeshChange: 0
     invoked: 1
-  - pos: {x: 25.5, y: 1, z: 0}
+  - pos: {x: 21, y: 1, z: 0}
     offset: {x: 0, y: 0, z: 0}
     lineSpacing: 1
     isEndOfParagraph: 0
@@ -2671,10 +2673,10 @@ MonoBehaviour:
     soundClipData: {fileID: 0}
     IdxIdentifier: 0
     InfoInUse: 0
-    chSize: 14
+    chSize: 4
     submeshChange: 0
     invoked: 1
-  - pos: {x: 33.5, y: 1, z: 0}
+  - pos: {x: 28, y: 1, z: 0}
     offset: {x: 0, y: 0, z: 0}
     lineSpacing: 1
     isEndOfParagraph: 0
@@ -2711,10 +2713,10 @@ MonoBehaviour:
     soundClipData: {fileID: 0}
     IdxIdentifier: 0
     InfoInUse: 0
-    chSize: 14
+    chSize: 4
     submeshChange: 0
     invoked: 1
-  - pos: {x: 41.5, y: 1, z: 0}
+  - pos: {x: 35, y: 1, z: 0}
     offset: {x: 0, y: 0, z: 0}
     lineSpacing: 1
     isEndOfParagraph: 0
@@ -2751,7 +2753,7 @@ MonoBehaviour:
     soundClipData: {fileID: 0}
     IdxIdentifier: 0
     InfoInUse: 0
-    chSize: 14
+    chSize: 4
     submeshChange: 0
     invoked: 1
   lineHeights:
@@ -2788,7 +2790,7 @@ MonoBehaviour:
   unreading: 0
   size: 14
   bestFitMulti: 1
-  quality: 14
+  quality: 4
   filterMode: 1
   maskMode: 0
   style: 0
@@ -2811,23 +2813,23 @@ MonoBehaviour:
   textMesh: {fileID: 0}
   rawTopLeftBounds: {x: 80, y: -15, z: 0}
   rawBottomRightBounds: {x: -80, y: 15, z: 0}
-  rawBottomRightTextBounds: {x: 101, y: -14, z: 0}
-  topLeftBounds: {x: 375.25, y: 130.25, z: 0}
-  topRightBounds: {x: 535.25, y: 130.25, z: 0}
-  bottomLeftBounds: {x: 375.25, y: 100.25, z: 0}
-  bottomRightBounds: {x: 535.25, y: 100.25, z: 0}
-  centerBounds: {x: 455.25, y: 115.25, z: 0}
-  topLeftTextBounds: {x: 404.75, y: 122.25, z: 0}
-  topRightTextBounds: {x: 505.75, y: 122.25, z: 0}
-  bottomLeftTextBounds: {x: 404.75, y: 108.25, z: 0}
-  bottomRightTextBounds: {x: 505.75, y: 108.25, z: 0}
-  centerTextBounds: {x: 455.25, y: 115.25, z: 0}
-  finalTopLeftTextBounds: {x: 404.75, y: 122.25, z: 0}
-  finalTopRightTextBounds: {x: 505.75, y: 122.25, z: 0}
-  finalBottomLeftTextBounds: {x: 404.75, y: 108.25, z: 0}
-  finalBottomRightTextBounds: {x: 505.75, y: 108.25, z: 0}
-  finalCenterTextBounds: {x: 455.25, y: 115.25, z: 0}
-  unwrappedBottomRightTextBounds: {x: 100, y: -14, z: 0}
+  rawBottomRightTextBounds: {x: 98, y: -14, z: 0}
+  topLeftBounds: {x: 198.45833, y: 100.69324, z: 0}
+  topRightBounds: {x: 234.54167, y: 100.69324, z: 0}
+  bottomLeftBounds: {x: 198.45833, y: 93.92761, z: 0}
+  bottomRightBounds: {x: 234.54167, y: 93.92761, z: 0}
+  centerBounds: {x: 216.5, y: 97.310425, z: 0}
+  topLeftTextBounds: {x: 205.44948, y: 98.88907, z: 0}
+  topRightTextBounds: {x: 227.55052, y: 98.88907, z: 0}
+  bottomLeftTextBounds: {x: 205.44948, y: 95.73177, z: 0}
+  bottomRightTextBounds: {x: 227.55052, y: 95.73177, z: 0}
+  centerTextBounds: {x: 216.5, y: 97.310425, z: 0}
+  finalTopLeftTextBounds: {x: 205.44948, y: 98.88907, z: 0}
+  finalTopRightTextBounds: {x: 227.55052, y: 98.88907, z: 0}
+  finalBottomLeftTextBounds: {x: 205.44948, y: 95.73177, z: 0}
+  finalBottomRightTextBounds: {x: 227.55052, y: 95.73177, z: 0}
+  finalCenterTextBounds: {x: 216.5, y: 97.310425, z: 0}
+  unwrappedBottomRightTextBounds: {x: 91, y: -14, z: 0}
   onCompleteEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -2897,16 +2899,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6994481104226963066}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalScale: {x: 0.33333334, y: 0.33333334, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 4119134970711240860}
+  m_Father: {fileID: 159518465412936732}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -300, y: 0}
+  m_AnchoredPosition: {x: 0.000030517578, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &297627915111907171
@@ -2976,7 +2978,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 6798356000220942412}
   m_Father: {fileID: 4119134970711240860}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -3047,16 +3050,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7945360419682585768}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalScale: {x: 0.33333334, y: 0.33333334, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 4119134970711240860}
+  m_Father: {fileID: 2836738522573124093}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 300, y: 0}
+  m_AnchoredPosition: {x: -0.000030517578, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &657371369461312000
@@ -3264,9 +3267,6 @@ RectTransform:
   - {fileID: 2836738522573124093}
   - {fileID: 5934697370198341517}
   - {fileID: 159518465412936732}
-  - {fileID: 368830228208158769}
-  - {fileID: 6798356000220942412}
-  - {fileID: 6185746888291496358}
   - {fileID: 4939277993894947107}
   - {fileID: 4545706044777773792}
   - {fileID: 3285565536196881351}
@@ -3286,7 +3286,7 @@ Canvas:
   m_GameObject: {fileID: 9003241279314083386}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -3312,10 +3312,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3

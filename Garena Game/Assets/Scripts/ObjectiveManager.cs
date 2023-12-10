@@ -23,6 +23,7 @@ public class ObjectiveManager : MonoBehaviour
     public void TakeDamage()
     {
         AudioManager.Instance.PlaySound("MoneyTaken", 1, 1, false);
+        print("hit");
         Material mat = GetComponent<Renderer>().material;
         mat.EnableKeyword("HITEFFECT_ON");
         Invoke("TurnOffHit", 0.1f);
