@@ -21,6 +21,7 @@ public class EnemyAttack : MonoBehaviour
     {
         enemyMovement = GetComponent<EnemyMovement>();
         gm = FindAnyObjectByType<GameManager>();
+        source = GetComponent<AudioSource>();
     }
 
     private void Start()
@@ -58,12 +59,6 @@ public class EnemyAttack : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            if (Random.Range(1, 3) == 2)
-            {
-                source.clip = sounds[Random.Range(0, sounds.Length)];
-                source.Play();
-            }
-
             collision.gameObject.GetComponent<PlayerMovementController>().TakeDamage(1);
             Destroy(gameObject);
         }

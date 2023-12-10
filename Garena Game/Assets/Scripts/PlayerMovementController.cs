@@ -58,6 +58,7 @@ public class PlayerMovementController : MonoBehaviour
         mat.EnableKeyword("HITEFFECT_ON");
 
         Invoke("ResetHighlight", 0.1f);
+        AudioManager.Instance.PlaySound("grunt" + Random.Range(0, 6), 1, 1, false);
     }
 
     void ResetHighlight()

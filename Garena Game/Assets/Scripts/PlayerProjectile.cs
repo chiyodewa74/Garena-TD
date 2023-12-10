@@ -5,12 +5,10 @@ using UnityEngine;
 public class PlayerProjectile : MonoBehaviour
 {
     [SerializeField] float force;
-    [SerializeField] AudioClip[] sounds;
 
     private Vector3 mousePos;
     private Camera mainCamera;
     private Rigidbody2D rb;
-    private AudioSource source;
 
     public int damage = 1;
 
@@ -40,11 +38,7 @@ public class PlayerProjectile : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            if (Random.Range(1, 3) == 2)
-            {
-                source.clip = sounds[Random.Range(0, sounds.Length)];
-                source.Play();
-            }
+            AudioManager.Instance.PlaySound("Hit", 0.7f, Random.Range(0.9f, 1.1f), false);
             collision.gameObject.GetComponent<EnemyManager>().TakeDamage(damage);
             Destroy(gameObject);
         }
