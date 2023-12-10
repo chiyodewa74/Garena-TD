@@ -30,7 +30,8 @@ public class GameManager : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.R))
             {
                 Time.timeScale = 1;
-                StartCoroutine(Transition());
+                Invoke("Transition", 2);
+                GameObject.Find("Transition").GetComponent<Animator>().SetTrigger("FadeIn");
             }
         }
 
@@ -62,10 +63,8 @@ public class GameManager : MonoBehaviour
         FindObjectOfType<ObjectiveManager>().TakeDamage();
     }
 
-    IEnumerator Transition()
+    void Transition()
     {
-        GameObject.Find("Transition").GetComponent<Animator>().SetTrigger("FadeIn");
-        yield return new WaitForSecondsRealtime(2);
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
