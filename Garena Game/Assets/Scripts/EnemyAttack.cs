@@ -7,13 +7,11 @@ public class EnemyAttack : MonoBehaviour
     [SerializeField] EnemyType enemyType;
     [SerializeField] float attackRange;
     [SerializeField] LayerMask PlayerMask;
-    [SerializeField] AudioClip[] sounds;
     bool DetectingPlayer;
     public float MinShootTime;
     public float MaxShootTime;
     public GameObject Projectile;
     public GameManager gm;
-    private AudioSource source;
     float SelectedShootTime;
     EnemyMovement enemyMovement;
 
@@ -21,7 +19,6 @@ public class EnemyAttack : MonoBehaviour
     {
         enemyMovement = GetComponent<EnemyMovement>();
         gm = FindAnyObjectByType<GameManager>();
-        source = GetComponent<AudioSource>();
     }
 
     private void Start()

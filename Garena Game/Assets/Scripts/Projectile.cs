@@ -4,9 +4,6 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    [SerializeField] AudioClip[] sounds;
-    private AudioSource source;
-
     public float Force;
     Rigidbody2D rb;
 
@@ -40,12 +37,6 @@ public class Projectile : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            if (Random.Range(1, 3) == 2)
-            {
-                source.clip = sounds[Random.Range(0, sounds.Length)];
-                source.Play();
-            }
-
             collision.gameObject.GetComponent<PlayerMovementController>().TakeDamage(1);
             Destroy(gameObject);
         }
