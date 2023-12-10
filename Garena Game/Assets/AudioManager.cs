@@ -82,7 +82,7 @@ public class AudioManager : MonoBehaviour
         AudioSource[] audioSources = GetComponents<AudioSource>();
         int AudioSourceFounded = 0;
 
-        for (int i = 0; i < audioSources.Length; i++)
+        for (int i = 0; i < audioSources.Length - 1; i++)
         {
             if (audioSources[i].clip.name == SoundName)
             {
